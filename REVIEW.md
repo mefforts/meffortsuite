@@ -4,7 +4,7 @@ The new Start-once sequence is optional, defaults to off, and requires plain Rig
 
 The shared manager is version 8 and upgrades recognized version 7 tables in place. Its sequence argument is optional; older Suite callers retain the normal macro. Both exact macro bodies are recognized for owned-macro migration and explicit cleanup. Custom and account macros retain their existing protection.
 
-The native right-click driver accepts Shift only while the sequence is applied and binds both gestures to the same verified macro. Changes remain queued during combat. The settings panel keeps Shift-only activation separate, shows pending sequence changes, and restores normal casting when the option is disabled. A short, dismissible login announcement opens settings without enabling the option.
+The native right-click driver accepts Shift only while the sequence is applied and binds both gestures to the same verified macro. Changes remain queued during combat. The settings panel keeps Shift-only activation separate, shows pending sequence changes, and restores normal casting when the option is disabled. The login chat message mentions the option; no on-screen popup is created.
 
 Validation covers default-off behavior, sequence round trips, saved choices, combat queues, deletion recovery, both Suite load orders, localized bodies, macro preservation, equipment and modifier suppression, UI controls, and the login announcement. Tests model addon flow; they do not validate actual Shoot events, input dispatch, taint, or rendered text in Forever.
 
@@ -15,7 +15,7 @@ Target-client checks:
 3. Stop by moving or casting, then hold Shift for one right-click over the enemy and release Shift. Report whether Shoot restarts; the native restart failure remains unresolved.
 4. Change targets, leave combat, and disable the option. Confirm the normal macro and ordinary modifier behavior return.
 5. Save changes during combat and inspect applied/pending status until combat ends. Check camera movement, looting, fishing gear, custom macros, and Suite fallback.
-6. Confirm the login announcement fits the screen, dismisses automatically or by right-click, opens settings by left-click, and honors Show login message.
+6. Confirm the login announcement appears only in chat and honors Show login message.
 
 ## Earlier review
 
