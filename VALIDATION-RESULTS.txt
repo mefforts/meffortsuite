@@ -4,28 +4,28 @@ PASS: both manifests, module load order, versions and 8-file ZIP
 Running test_integration.py
 ............
 ----------------------------------------------------------------------
-Ran 12 tests in 0.052s
+Ran 12 tests in 0.055s
 
 OK
 
 Running test_macros.py
-...........................
+............................
 ----------------------------------------------------------------------
-Ran 27 tests in 0.021s
+Ran 28 tests in 0.022s
 
 OK
 
 Running test_runtime.py
 .........................
 ----------------------------------------------------------------------
-Ran 25 tests in 0.037s
+Ran 25 tests in 0.039s
 
 OK
 
 Running test_sequence.py
-..
+....
 ----------------------------------------------------------------------
-Ran 2 tests in 0.004s
+Ran 4 tests in 0.020s
 
 OK
 
