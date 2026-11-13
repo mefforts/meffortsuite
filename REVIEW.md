@@ -1,3 +1,24 @@
+# MeffortWand 1.0.4 release review
+
+The new Start-once sequence is optional, defaults to off, and requires plain Right-click activation. The UI explains one Shift + right-click restart attempt and the known native restart limitation. This release does not establish reliable same-button SpamSafe behavior.
+
+The shared manager is version 8 and upgrades recognized version 7 tables in place. Its sequence argument is optional; older Suite callers retain the normal macro. Both exact macro bodies are recognized for owned-macro migration and explicit cleanup. Custom and account macros retain their existing protection.
+
+The native right-click driver accepts Shift only while the sequence is applied and binds both gestures to the same verified macro. Changes remain queued during combat. The settings panel keeps Shift-only activation separate, shows pending sequence changes, and restores normal casting when the option is disabled. A short, dismissible login announcement opens settings without enabling the option.
+
+Validation covers default-off behavior, sequence round trips, saved choices, combat queues, deletion recovery, both Suite load orders, localized bodies, macro preservation, equipment and modifier suppression, UI controls, and the login announcement. Tests model addon flow; they do not validate actual Shoot events, input dispatch, taint, or rendered text in Forever.
+
+Target-client checks:
+
+1. Install 1.0.4 over the existing folder and confirm the sequence starts unchecked for a character without a saved sequence choice.
+2. Open `/mwand`, select Right-click, and enable Start-once sequence. Verify repeated right-clicks on the same living enemy, including pauses between shots.
+3. Stop by moving or casting, then hold Shift for one right-click over the enemy and release Shift. Report whether Shoot restarts; the native restart failure remains unresolved.
+4. Change targets, leave combat, and disable the option. Confirm the normal macro and ordinary modifier behavior return.
+5. Save changes during combat and inspect applied/pending status until combat ends. Check camera movement, looting, fishing gear, custom macros, and Suite fallback.
+6. Confirm the login announcement fits the screen, dismisses automatically or by right-click, opens settings by left-click, and honors Show login message.
+
+## Earlier review
+
 # MeffortWand 1.0.3 review
 
 Reviewed the uploaded MeffortWand 1.0.2 source and implemented fixes plus a standalone `/mwand` settings panel. The original upload is retained unchanged. MeffortSuite source files were not modified.

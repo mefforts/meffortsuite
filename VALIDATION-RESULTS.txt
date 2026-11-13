@@ -1,0 +1,32 @@
+PASS: 3 addon modules compile under Lua 5.1
+PASS: both manifests, module load order, versions and 8-file ZIP
+
+Running test_integration.py
+............
+----------------------------------------------------------------------
+Ran 12 tests in 0.054s
+
+OK
+
+Running test_macros.py
+..........................
+----------------------------------------------------------------------
+Ran 26 tests in 0.022s
+
+OK
+
+Running test_runtime.py
+.........................
+----------------------------------------------------------------------
+Ran 25 tests in 0.041s
+
+OK
+
+Running test_settings.py
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.013s
+
+OK
+
+PASS: 4 regression scripts. Target-client verification remains separate.
