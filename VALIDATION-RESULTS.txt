@@ -1,0 +1,151 @@
+PASS: 19 Lua files compile under Lua 5.1
+PASS: bindings XML and TOC load entries
+
+Running test_bank_inventory.py
+...............
+----------------------------------------------------------------------
+Ran 15 tests in 0.017s
+
+OK
+
+Running test_combat.py
+test_action_apply_exposes_failure_and_restores_on_disable (__main__.CombatTests.test_action_apply_exposes_failure_and_restores_on_disable) ... ok
+test_action_preview_defers_restyle_and_routes_back (__main__.CombatTests.test_action_preview_defers_restyle_and_routes_back) ... ok
+test_hidden_tracking_keeps_casts_and_deduplicates_guids (__main__.CombatTests.test_hidden_tracking_keeps_casts_and_deduplicates_guids) ... ok
+test_overlay_converts_scale_and_invalidates_scale_cache (__main__.CombatTests.test_overlay_converts_scale_and_invalidates_scale_cache) ... ok
+test_overlay_hides_for_hidden_ancestor_and_master (__main__.CombatTests.test_overlay_hides_for_hidden_ancestor_and_master) ... ok
+test_range_legacy_controls_and_escape (__main__.CombatTests.test_range_legacy_controls_and_escape) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+OK
+
+Running test_core.py
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.008s
+
+OK
+
+Running test_diagnostics.py
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.043s
+
+OK
+
+Running test_enchant.py
+.............................
+----------------------------------------------------------------------
+Ran 29 tests in 0.039s
+
+OK
+
+Running test_gossip_services.py
+..................
+----------------------------------------------------------------------
+Ran 18 tests in 0.024s
+
+OK
+
+Running test_interactions.py
+.............
+----------------------------------------------------------------------
+Ran 13 tests in 0.020s
+
+OK
+|cff73d9ffMeffort input|r: Preserved custom MeffortAim; using MeffortRC instead.
+
+Running test_load.py
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 0.586s
+
+OK
+
+Running test_package.py
+......
+----------------------------------------------------------------------
+Ran 6 tests in 1.147s
+
+OK
+
+Running test_quest_geometry_ownership.py
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 0.027s
+
+OK
+
+Running test_quest_inline.py
+..................
+----------------------------------------------------------------------
+Ran 18 tests in 0.035s
+
+OK
+
+Running test_quest_inline_contract.py
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.008s
+
+OK
+
+Running test_quest_inline_layering.py
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.006s
+
+OK
+
+Running test_quest_native_layouts.py
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.013s
+
+OK
+
+Running test_quest_native_safety.py
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.017s
+
+OK
+
+Running test_quest_priority.py
+................
+----------------------------------------------------------------------
+Ran 16 tests in 0.028s
+
+OK
+
+Running test_quest_render_regression.py
+............
+----------------------------------------------------------------------
+Ran 12 tests in 0.035s
+
+OK
+
+Running test_settings.py
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.019s
+
+OK
+
+Running test_tooltips.py
+PASS: saved Compare mode renders comparison and survives master toggles
+PASS: native red resource warning is preserved
+PASS: tooltip cleanup restores original text and colors
+PASS: cleanup preserves externally refreshed text and colors
+PASS: unsupported mode is normalized
+
+Running test_way_commands.py
+.................
+----------------------------------------------------------------------
+Ran 17 tests in 0.022s
+
+OK
+
+PASS: 20 regression scripts. Client validation remains separate.
