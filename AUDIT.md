@@ -1,4 +1,8 @@
-# MeffortSuite 1.1.4 release audit
+# MeffortSuite 1.1.5 release audit
+
+Login announcements now run once per login or UI reload rather than only on first installation. They use the existing chat message function and include version, master status, and the settings paths. A saved account-wide Show login message preference defaults to enabled and is available in both the native Options canvas and the suite About page. No notification popup is created.
+
+The native AddOns category uses RegisterCanvasLayoutCategory and RegisterAddOnCategory on Forever's Interface 16001 Settings API, with a legacy InterfaceOptions_AddCategory fallback. Registration waits for an available API through load/login events and unregisters its events after success. The page uses native button and checkbox templates, opens the existing feature launcher, and uses the native Close method so unapplied settings retain Blizzard's confirmation flow. It does not replace native methods, reparent protected controls, or poll.
 
 The banking inclusion list is additive to ordinary crafting-reagent deposits and uses the same exact-name or numeric-ID format as exclusions. Keep in bags wins over both inclusion forms. The list defaults to empty and is stored per character; existing preferences and exclusions are retained.
 
@@ -8,6 +12,6 @@ Eligibility is rechecked before each pickup. An explicit inclusion may override 
 
 The Bags settings page labels the additional list Also deposit and explains exclusion priority, character scope, and list-change cancellation. Both fields retain independent drafts. Deposit items now and /msuite bank now use the same selection. Commands, status messages, and documentation are written for players without conversational instructions or prompt remnants.
 
-The 1.1.3 dialogue changes and blocked-action diagnostics are retained. Unrelated Lua modules, spell data, textures, bindings, and licensing are unchanged. The package builder validates versions, the explicit TOC manifest, residue, permissions, and ZIP integrity.
+The 1.1.4 bank inclusion list, 1.1.3 dialogue changes and blocked-action diagnostics are retained. Unrelated Lua modules, spell data, textures, bindings, and licensing are unchanged. The package builder validates versions, the explicit TOC manifest, residue, permissions, and ZIP integrity.
 
 Automated inventory tests simulate slot updates and transfer ordering; they do not emulate engine protection, server permission decisions, or live client timing. In-game checks are listed in VALIDATION.md. This archive is prepared for testing and is not submitted to CurseForge or published as a cloud environment.

@@ -11,7 +11,7 @@ OK
 Running test_bank_inventory.py
 ...............
 ----------------------------------------------------------------------
-Ran 15 tests in 0.013s
+Ran 15 tests in 0.012s
 
 OK
 
@@ -29,9 +29,9 @@ Ran 6 tests in 0.006s
 OK
 
 Running test_core.py
-..........
+.............
 ----------------------------------------------------------------------
-Ran 10 tests in 0.008s
+Ran 13 tests in 0.012s
 
 OK
 
@@ -45,21 +45,21 @@ OK
 Running test_enchant.py
 .............................
 ----------------------------------------------------------------------
-Ran 29 tests in 0.037s
+Ran 29 tests in 0.058s
 
 OK
 
 Running test_gossip_services.py
 ..................
 ----------------------------------------------------------------------
-Ran 18 tests in 0.023s
+Ran 18 tests in 0.037s
 
 OK
 
 Running test_interactions.py
 .............
 ----------------------------------------------------------------------
-Ran 13 tests in 0.012s
+Ran 13 tests in 0.015s
 
 OK
 |cff73d9ffMeffort input|r: Preserved custom MeffortAim; using MeffortRC instead.
@@ -67,28 +67,35 @@ OK
 Running test_load.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.539s
+Ran 10 tests in 0.637s
+
+OK
+
+Running test_options_registration.py
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.016s
 
 OK
 
 Running test_package.py
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 1.154s
+Ran 6 tests in 1.194s
 
 OK
 
 Running test_quest_geometry_ownership.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.035s
+Ran 10 tests in 0.027s
 
 OK
 
 Running test_quest_inline.py
 ..................
 ----------------------------------------------------------------------
-Ran 18 tests in 0.041s
+Ran 18 tests in 0.046s
 
 OK
 
@@ -102,14 +109,14 @@ OK
 Running test_quest_inline_layering.py
 ...
 ----------------------------------------------------------------------
-Ran 3 tests in 0.007s
+Ran 3 tests in 0.006s
 
 OK
 
 Running test_quest_native_layouts.py
 .......
 ----------------------------------------------------------------------
-Ran 7 tests in 0.013s
+Ran 7 tests in 0.014s
 
 OK
 
@@ -123,21 +130,21 @@ OK
 Running test_quest_priority.py
 ................
 ----------------------------------------------------------------------
-Ran 16 tests in 0.029s
+Ran 16 tests in 0.031s
 
 OK
 
 Running test_quest_render_regression.py
 ............
 ----------------------------------------------------------------------
-Ran 12 tests in 0.039s
+Ran 12 tests in 0.036s
 
 OK
 
 Running test_settings.py
 .........
 ----------------------------------------------------------------------
-Ran 9 tests in 0.022s
+Ran 9 tests in 0.023s
 
 OK
 
@@ -155,4 +162,4 @@ Ran 17 tests in 0.022s
 
 OK
 
-PASS: 21 regression scripts. Client validation remains separate.
+PASS: 22 regression scripts. Client validation remains separate.
