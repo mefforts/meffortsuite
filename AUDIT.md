@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.5 release audit
+# MeffortSuite 1.1.4a release audit
 
 Login announcements now run once per login or UI reload rather than only on first installation. They use the existing chat message function and include version, master status, and the settings paths. A saved account-wide Show login message preference defaults to enabled and is available in both the native Options canvas and the suite About page. No notification popup is created.
 

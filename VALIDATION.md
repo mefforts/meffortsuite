@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.5 validation
+# MeffortSuite 1.1.4a validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -40,7 +40,7 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - Tests cover unknown reagent classification with explicit inclusion, unavailable stack metadata, partial and non-stackable items, bank-access loss, rejected placement, list removal during a transfer, and missing selective support without native bulk fallback.
 - In game, verify a small included item, an item on both lists, a non-stackable item, and a changed list while the bank remains open. Confirm saved character scope, normal bank restrictions, and manual/automatic deposits.
 
-## Added 1.1.5 checks
+## Added 1.1.4a checks
 
 - Existing accounts receive one chat announcement per login or reload, including when the suite master switch is off. An explicit false preference suppresses it; malformed preferences return to the enabled default.
 - Native Settings canvas registration prefers the modern API, supports a legacy fallback, retries on addon loads if the API is delayed, and registers only once without polling or opening a window.
