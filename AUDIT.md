@@ -1,4 +1,8 @@
-# MeffortSuite 1.1.4a release audit
+# MeffortSuite 1.1.4b release audit
+
+Dialogue gutter state now validates rendered icon and caption bounds as well as anchors. A horizontal layout change while an inset is active no longer becomes a new native baseline. Owned geometry is restored and the affected row's label is paused until the next conversation; other rows and keyboard shortcuts remain available. Close/disable cleanup also removes drift while the label-owned width is still present. An externally replaced position and width remain under the external owner's control. Initial placements that move content beyond the expected single inset are rolled back immediately. Pixel rounding within one unit is tolerated in rendered bounds checks.
+
+Ten focused tests cover late caption and icon drift, implicit visual displacement without changed anchors, native width reset, immediate invalid placement, close-before-refresh cleanup, new-dialogue recovery, unsupported initial spacing, external layout ownership, and small pixel rounding. Eight regression scenarios expose missing guards in the prior 1.1.4a build under the same simulated API conditions. Native rendering remains a separate client check.
 
 Login announcements now run once per login or UI reload rather than only on first installation. They use the existing chat message function and include version, master status, and the settings paths. A saved account-wide Show login message preference defaults to enabled and is available in both the native Options canvas and the suite About page. No notification popup is created.
 

@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.4a validation
+# MeffortSuite 1.1.4b validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -46,6 +46,12 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - Native Settings canvas registration prefers the modern API, supports a legacy fallback, retries on addon loads if the API is delayed, and registers only once without polling or opening a window.
 - The launcher uses the existing suite settings window and respects the native Close confirmation for unapplied changes. The native checkbox and About toggle share the saved account preference.
 - In game, confirm the AddOns category is listed, the launcher opens above the game after closing Options, and native unapplied graphics changes still receive their normal confirmation. Check chat on login/reload with the announcement on and off, and verify small-screen text wrapping.
+
+## Added 1.1.4b checks
+
+- Ten new tests cover late caption/icon displacement, unchanged-anchor visual drift, width resets, invalid immediate placement, paused-label lifetime, close-before-refresh cleanup, external position/width ownership, unsupported baseline spacing, and fractional visual rounding.
+- When an owned inset becomes unstable, restore native geometry, pause that row's label for the conversation, and retain its keyboard binding. Do not recapture the modified row as a new baseline or repeatedly retry it. Stable rows remain decorated.
+- In Forever, test Koma's single bank choice with the bank shortcut bypassed by Shift. Leave the menu open, hover and click options, close/reopen rapidly, and repeat with available/active/long quests and other UI addons. Verify that bank text remains readable near its native icon, numbers never push text to the right edge, and skipped numbers retain their keyboard behavior. Check combat entry/exit and UI scale changes.
 
 ## Required in-game checks
 

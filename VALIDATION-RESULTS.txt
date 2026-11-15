@@ -4,14 +4,14 @@ PASS: bindings XML and TOC load entries
 Running test_bank_inclusions.py
 ...............
 ----------------------------------------------------------------------
-Ran 15 tests in 0.017s
+Ran 15 tests in 0.020s
 
 OK
 
 Running test_bank_inventory.py
 ...............
 ----------------------------------------------------------------------
-Ran 15 tests in 0.011s
+Ran 15 tests in 0.013s
 
 OK
 
@@ -24,42 +24,42 @@ test_overlay_hides_for_hidden_ancestor_and_master (__main__.CombatTests.test_ove
 test_range_legacy_controls_and_escape (__main__.CombatTests.test_range_legacy_controls_and_escape) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.006s
+Ran 6 tests in 0.008s
 
 OK
 
 Running test_core.py
 .............
 ----------------------------------------------------------------------
-Ran 13 tests in 0.010s
+Ran 13 tests in 0.011s
 
 OK
 
 Running test_diagnostics.py
 .......
 ----------------------------------------------------------------------
-Ran 7 tests in 0.045s
+Ran 7 tests in 0.049s
 
 OK
 
 Running test_enchant.py
 .............................
 ----------------------------------------------------------------------
-Ran 29 tests in 0.036s
+Ran 29 tests in 0.049s
 
 OK
 
 Running test_gossip_services.py
 ..................
 ----------------------------------------------------------------------
-Ran 18 tests in 0.023s
+Ran 18 tests in 0.039s
 
 OK
 
 Running test_interactions.py
 .............
 ----------------------------------------------------------------------
-Ran 13 tests in 0.012s
+Ran 13 tests in 0.015s
 
 OK
 |cff73d9ffMeffort input|r: Preserved custom MeffortAim; using MeffortRC instead.
@@ -67,84 +67,91 @@ OK
 Running test_load.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.584s
+Ran 10 tests in 0.678s
 
 OK
 
 Running test_options_registration.py
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 0.014s
+Ran 6 tests in 0.022s
 
 OK
 
 Running test_package.py
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 1.136s
+Ran 6 tests in 1.292s
 
 OK
 
 Running test_quest_geometry_ownership.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.025s
+Ran 10 tests in 0.041s
+
+OK
+
+Running test_quest_gutter_drift.py
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 0.080s
 
 OK
 
 Running test_quest_inline.py
 ..................
 ----------------------------------------------------------------------
-Ran 18 tests in 0.034s
+Ran 18 tests in 0.048s
 
 OK
 
 Running test_quest_inline_contract.py
 ...
 ----------------------------------------------------------------------
-Ran 3 tests in 0.006s
+Ran 3 tests in 0.007s
 
 OK
 
 Running test_quest_inline_layering.py
 ...
 ----------------------------------------------------------------------
-Ran 3 tests in 0.006s
+Ran 3 tests in 0.008s
 
 OK
 
 Running test_quest_native_layouts.py
 .......
 ----------------------------------------------------------------------
-Ran 7 tests in 0.013s
+Ran 7 tests in 0.015s
 
 OK
 
 Running test_quest_native_safety.py
 .....
 ----------------------------------------------------------------------
-Ran 5 tests in 0.020s
+Ran 5 tests in 0.023s
 
 OK
 
 Running test_quest_priority.py
 ................
 ----------------------------------------------------------------------
-Ran 16 tests in 0.030s
+Ran 16 tests in 0.068s
 
 OK
 
 Running test_quest_render_regression.py
 ............
 ----------------------------------------------------------------------
-Ran 12 tests in 0.042s
+Ran 12 tests in 0.043s
 
 OK
 
 Running test_settings.py
 .........
 ----------------------------------------------------------------------
-Ran 9 tests in 0.023s
+Ran 9 tests in 0.027s
 
 OK
 
@@ -158,8 +165,8 @@ PASS: unsupported mode is normalized
 Running test_way_commands.py
 .................
 ----------------------------------------------------------------------
-Ran 17 tests in 0.024s
+Ran 17 tests in 0.026s
 
 OK
 
-PASS: 22 regression scripts. Client validation remains separate.
+PASS: 23 regression scripts. Client validation remains separate.
