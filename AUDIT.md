@@ -1,4 +1,14 @@
-# MeffortSuite 1.1.4b release audit
+# MeffortSuite 1.1.4c release audit
+
+A supplied client report records 80 ADDON_ACTION_BLOCKED events during combat with action UNKNOWN(), no open NPC/bank/profession interface, and no standalone MeffortWand. It establishes repeated native protection failures, but does not identify the original API or taint source. No definite root-cause attribution is made from that report.
+
+Target-distance polling now excludes CheckInteractDistance from combat, matching the existing item-range guard. Range queries and camera start/stop calls use a private suite wrapper that records the active call while retaining normal API dispatch. A native blocked event during that call suspends only the corresponding operation and combat condition for the UI session. There are no replacements or hooks on global client APIs, and no saved feature preference is disabled. Supported combat spell probes remain available; unavailable or refused results remain unknown and never become a definite out-of-range warning.
+
+Camera start respects explicit failure results and the applied input mode. Blocked release stops repeated frame-driven attempts and retains pending cleanup for a retry after combat. Macro actions and the secure driver remain separate from the camera helper.
+
+Reports retain the first bounded event stack for an entry, aggregate duplicate events, and capture the wrapped call where available. Calls observed within one second of a deferred event are explicitly labelled correlation only and are not used to suspend an unproven source. The existing 16-entry native-event and 8-entry Lua-error limits remain. Stack captures are limited to six lines, with 180 characters per line. The explicit copy window allows 50,000 characters to retain the bounded report. Exports include the applied ranged mode, camera cleanup state, and saved range-warning preference. No automatic popup or transmission is added.
+
+Twelve new regression tests simulate native blocks that do not raise Lua exceptions, operation/combat isolation, 80 attempted repeats, scope cleanup, unknown-action stack limits, unavailable/secret stack data, delayed-event correlation, range guards, supported range behavior, and camera cleanup. These tests do not establish real Forever taint behavior or event timing. Live verification and a new report remain necessary if the failure recurs.
 
 Dialogue gutter state now validates rendered icon and caption bounds as well as anchors. A horizontal layout change while an inset is active no longer becomes a new native baseline. Owned geometry is restored and the affected row's label is paused until the next conversation; other rows and keyboard shortcuts remain available. Close/disable cleanup also removes drift while the label-owned width is still present. An externally replaced position and width remain under the external owner's control. Initial placements that move content beyond the expected single inset are rolled back immediately. Pixel rounding within one unit is tolerated in rendered bounds checks.
 

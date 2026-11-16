@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.4b validation
+# MeffortSuite 1.1.4c validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -52,6 +52,14 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - Ten new tests cover late caption/icon displacement, unchanged-anchor visual drift, width resets, invalid immediate placement, paused-label lifetime, close-before-refresh cleanup, external position/width ownership, unsupported baseline spacing, and fractional visual rounding.
 - When an owned inset becomes unstable, restore native geometry, pause that row's label for the conversation, and retain its keyboard binding. Do not recapture the modified row as a new baseline or repeatedly retry it. Stable rows remain decorated.
 - In Forever, test Koma's single bank choice with the bank shortcut bypassed by Shift. Leave the menu open, hover and click options, close/reopen rapidly, and repeat with available/active/long quests and other UI addons. Verify that bank text remains readable near its native icon, numbers never push text to the right edge, and skipped numbers retain their keyboard behavior. Check combat entry/exit and UI scale changes.
+
+## Added 1.1.4c checks
+
+- Interaction and item probes do not run in combat. Supported spell-range queries remain active; a blocked query becomes unknown rather than an out-of-range result.
+- Twelve focused tests simulate native blocked events without Lua exceptions, 80 repeated requests, per-operation/combat-context suspension, nested scope restoration, bounded stack capture, unavailable/secret stacks, delayed-event correlation, supported and refused spell range, and camera start/release handling.
+- A synchronous blocked event records the wrapped call and suppresses its later requests in that combat context until reload. A deferred event records recent calls within one second as correlation only and does not disable an unproven source.
+- A blocked owned camera release stops its frame polling and retries once after combat. Stored ranged mode and macro action remain intact. Exports include applied mode, pending changes, camera status, and the range-warning preference.
+- In game, test the same combat that produced UNKNOWN(), with right-click attacks, camera press/hold/release, the range warning on/off, different targets, UI hover, and combat entry/exit. Export before reloading if the failure repeats. Confirm camera release, spell range behavior, and that the report identifies the call or bounded stack when the client supplies it. Automated events do not establish real engine delivery timing or a confirmed taint source.
 
 ## Required in-game checks
 
