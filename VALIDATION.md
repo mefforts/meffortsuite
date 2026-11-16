@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.4d validation
+# MeffortSuite 1.1.4e validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -68,6 +68,13 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - In Forever, test auto-loot and manual looting with only coins, only greys, mixed qualities, grey stacks, full bags, split money, AoE loot, rapid corpse changes, an uncached grey item, and a second player looting nearby. Compare displayed values with the receipt amounts and per-item vendor values. Confirm how the server batches money receipts into money slots; live event order is not established by the mocks.
 - Judge the font, native coin textures, rise, fade, screen clamping, and placement using Bags > Preview loot value, then real corpses with nameplates on/off and multiple UI scales. Confirm the cursor fallback and that the overlay remains click-through. Screen coordinates are not world anchoring, and hidden corpses cannot be tracked through camera movement.
 - Confirm the feature and master switches clear all active floats and pending totals, with no automatic popup at login and no idle OnUpdate work after animations finish. Keep the existing combat-failure checks enabled; the feature never reparents, anchors to, or changes native nameplates.
+
+## Added 1.1.4e checks
+
+- All item qualities contribute confirmed quantity times integer per-item vendor value by default. Actual loot money is still added; zero vendor prices contribute zero.
+- Four new loot scenarios cover qualities 0 through 8, stacked quantities and zero-value items, both directions of a mode change during a loot window, and uncached non-grey prices. The previous grey-only checks now select that mode explicitly.
+- The Bags quality checkbox and summary persist across navigation. Saved false preferences survive core normalization and login. Each loot window snapshots its mode, so a changed preference affects the next window without altering pending receipts.
+- In Forever, loot coins and mixed grey/white/green/blue/purple items, verify quantities and vendor prices, switch to grey-only mode, and repeat. Check zero-value quest items, item-cache delays, and changing the mode while a loot window remains open. Confirm the displayed total follows the mode captured when that window opened.
 
 ## Required in-game checks
 
