@@ -1,4 +1,14 @@
-# MeffortSuite 1.1.4c release audit
+# MeffortSuite 1.1.4d release audit
+
+The new floating loot-value module is loaded after Inventory. It observes loot windows and native self-loot receipt messages, without invoking loot, item-use, vendor, macro, or binding actions. Cash is parsed from the player's localized money receipt rather than inferred from wallet changes; guild deposits are excluded from the player's share. Grey-item value uses confirmed quantities and integer per-item vendor prices. Other qualities, unclaimed drops, other players, fishing and inventory-item loot are excluded. AoE loot is one combined interaction total.
+
+Loot snapshots supply matching item budgets. Duplicate chat line IDs, repeated ready/open events, multiple money slots, source changes, delayed receipts and cache misses are handled with bounded session state. Unknown grey prices are requested once outside combat and retried on a 0.2-second interval and on item-data events for a short interval; unavailable batch totals are omitted. Known non-grey slots need no vendor-price lookup. Late receipts update the same float where possible; a recycled float uses only the additional value if it must be recreated.
+
+The visual is a private, non-interactive UIParent-owned frame with Blizzard coin textures and an outlined native font. Six pooled floats rise 36 UI units over 2.4 seconds with a soft fade. Render updates stop when nothing is pending or visible. Nameplate and source-position queries are avoided in combat, forbidden nameplate coordinates are not read, and source frames are never altered, reparented or made anchor dependencies. Outside combat, available screen positions or brief cached positions can be used; otherwise placement falls back to the captured loot-click position. This does not provide true world-space anchoring to hidden corpses or camera tracking.
+
+The feature defaults on, saves its account-wide toggle under Bags, and provides an explicit preview without changing bags or money. Feature/master disable clears active visuals and pending sessions. No login preview or extra notification popup is added. Diagnostics include the last display result, copper value and positioning mode, without recording receipt text or sending data.
+
+Twenty-five focused regression tests plus settings and whole-TOC integration cover accounting, localization, cache handling, bounds, passive ownership and animation. The target client must still confirm actual event ordering, nameplate availability, native asset appearance and combat protection. Existing 1.1.4c safeguards are retained. No CurseForge or cloud-environment publication is performed.
 
 A supplied client report records 80 ADDON_ACTION_BLOCKED events during combat with action UNKNOWN(), no open NPC/bank/profession interface, and no standalone MeffortWand. It establishes repeated native protection failures, but does not identify the original API or taint source. No definite root-cause attribution is made from that report.
 

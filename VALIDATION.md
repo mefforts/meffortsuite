@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.4c validation
+# MeffortSuite 1.1.4d validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -60,6 +60,14 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - A synchronous blocked event records the wrapped call and suppresses its later requests in that combat context until reload. A deferred event records recent calls within one second as correlation only and does not disable an unproven source.
 - A blocked owned camera release stops its frame polling and retries once after combat. Stored ranged mode and macro action remain intact. Exports include applied mode, pending changes, camera status, and the range-warning preference.
 - In game, test the same combat that produced UNKNOWN(), with right-click attacks, camera press/hold/release, the range warning on/off, different targets, UI hover, and combat entry/exit. Export before reloading if the failure repeats. Confirm camera release, spell range behavior, and that the report identifies the call or bounded stack when the client supplies it. Automated events do not establish real engine delivery timing or a confirmed taint source.
+
+## Added 1.1.4d checks
+
+- Twenty-five focused loot tests cover exact coin denominations and stacked grey vendor prices, non-grey exclusion, missing cache data and bounded requests, unknown-price omission, grouped/split/guild money, chat-line deduplication, repeated ready/open events, full bags and other players, localized positional messages and native money-texture formats, invalid values and variants, manual/late/rapid loot windows, nameplate/cursor positioning and scale, combat query withdrawal, idle animation cleanup, bounded popup reuse, previews, master/feature disable, and container/fishing exclusion.
+- Whole-TOC tests build the Bags page and open the explicit preview, then verify immediate master-disable cleanup on private UIParent-owned frames. Settings tests verify the saved toggle and preview availability.
+- In Forever, test auto-loot and manual looting with only coins, only greys, mixed qualities, grey stacks, full bags, split money, AoE loot, rapid corpse changes, an uncached grey item, and a second player looting nearby. Compare displayed values with the receipt amounts and per-item vendor values. Confirm how the server batches money receipts into money slots; live event order is not established by the mocks.
+- Judge the font, native coin textures, rise, fade, screen clamping, and placement using Bags > Preview loot value, then real corpses with nameplates on/off and multiple UI scales. Confirm the cursor fallback and that the overlay remains click-through. Screen coordinates are not world anchoring, and hidden corpses cannot be tracked through camera movement.
+- Confirm the feature and master switches clear all active floats and pending totals, with no automatic popup at login and no idle OnUpdate work after animations finish. Keep the existing combat-failure checks enabled; the feature never reparents, anchors to, or changes native nameplates.
 
 ## Required in-game checks
 
