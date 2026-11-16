@@ -1,0 +1,14 @@
+MeffortSuite 1.1.4f
+
+- Fix custom action-bar text colors overriding Blizzard's red out-of-range warning.
+- Preserve native warning colors through styling refreshes and when customization is disabled.
+- Keep combat styling deferred and handle unreadable color data safely.
+- Review and shorten source comments; retain required licensing and data attribution.
+
+Recent release features
+- Floating loot totals: received coins plus vendor value across all item qualities, with an optional grey-only mode.
+- A per-character banking inclusion list for additional items, with Keep in bags taking priority.
+- MeffortSuite under Options > AddOns, with an optional chat login announcement.
+- Native dialogue spacing safeguards and expanded blocked-action diagnostic exports.
+
+Configure features with /msuite. Existing preferences are retained.

@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.4e validation
+# MeffortSuite 1.1.4f validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -75,6 +75,13 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - Four new loot scenarios cover qualities 0 through 8, stacked quantities and zero-value items, both directions of a mode change during a loot window, and uncached non-grey prices. The previous grey-only checks now select that mode explicitly.
 - The Bags quality checkbox and summary persist across navigation. Saved false preferences survive core normalization and login. Each loot window snapshots its mode, so a changed preference affects the next window without altering pending receipts.
 - In Forever, loot coins and mixed grey/white/green/blue/purple items, verify quantities and vendor prices, switch to grey-only mode, and repeat. Check zero-value quest items, item-cache delays, and changing the mode while a loot window remains open. Confirm the displayed total follows the mode captured when that window opened.
+
+## Added 1.1.4f checks
+
+- Ten new action-text tests reproduce native range-color updates, styling/binding/page refreshes while red, native return-to-range behavior, disabling and re-enabling styles, initial-red capture, font methods that reset color, user-selected red, combat write deferral, secret RGB/alpha, late native APIs, hook deduplication, pet/multibar warnings, hidden range indicators and unmanaged buttons. Eight scenarios expose missing safeguards in the previous 1.1.4e source.
+- Range-state colors come from Blizzard's existing range-indicator update. The addon adds no range polling or new protected action queries. Hooks record readable native colors; all custom color and geometry writes remain outside combat. Unknown colors are left untouched.
+- A lexical comparison confirms that comment cleanup leaves executable tokens and string literals unchanged in other feature modules. Model/prompt scans include the entire spell data, shipped text, secure strings and comments. Required MIT and CC BY notices remain included.
+- In Forever, configure a distinctive custom bar-text color, move into/out of range repeatedly, change target, page and bindings, open/close settings and change fonts, and toggle styling/master while red. Repeat on pet and multibars, in combat and outside combat. Verify native red remains visible and ordinary colors resume appropriately. Other action-bar addons can affect native update timing; actual rendering and taint remain client checks.
 
 ## Required in-game checks
 

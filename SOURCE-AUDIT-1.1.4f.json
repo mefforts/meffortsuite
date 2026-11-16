@@ -1,0 +1,29 @@
+{
+  "version": "1.1.4f",
+  "text_files_scanned": 27,
+  "prompt_or_model_remnants": [],
+  "legal_notices": "byte-identical",
+  "executable_changes": "action-text module only; versions updated in core and settings",
+  "textures": [
+    {
+      "name": "MeffortSuiteIcon.tga",
+      "size": "256x256",
+      "bits": 32
+    },
+    {
+      "name": "ParchmentPanel.tga",
+      "size": "512x512",
+      "bits": 32
+    },
+    {
+      "name": "RangeDot.tga",
+      "size": "64x64",
+      "bits": 32
+    },
+    {
+      "name": "SoftBadge.tga",
+      "size": "32x16",
+      "bits": 32
+    }
+  ]
+}

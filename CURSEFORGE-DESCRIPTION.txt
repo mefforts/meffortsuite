@@ -1,0 +1,30 @@
+MeffortSuite
+
+Inventory, profession, quest, combat and travel tools for WoW Forever (Interface 16001), with familiar Blizzard-style controls.
+
+Open /msuite or Options > AddOns > MeffortSuite. Each feature can be configured independently, and the master switch retains your saved preferences.
+
+Bags and banking
+- Floating loot totals with native coin icons, a gentle rise and fade, and confirmed loot money plus item vendor value. All item qualities are included by default; grey-only mode is available.
+- Bag sorting, grey-item sales, repairs using personal gold, reagent deposits and personal-bank sorting.
+- Per-character banking inclusion and exclusion lists using exact item names or numeric IDs.
+
+Professions
+- Right-click fishing while a fishing pole is equipped, with single- or double-click preferences.
+- Enchant Queue beside the Enchanting window, with a separate player input for every enchant and replacement confirmation.
+
+Combat and interface
+- Right-click ranged attacks, a conservative target-range warning and Mage Arcane Blast tracking on Blizzard Tracked Buffs.
+- Custom action-bar keybinding text with a live position preview. Native red out-of-range warnings take priority over custom colors.
+- English spell explanations, tooltip badges, palettes and rank alerts.
+
+Quests and travel
+- Spacebar quest priority, numbered dialogue choices and native menu labels where the layout permits them.
+- Single-option shop/service shortcuts and bank/flight-master dialogue shortcuts with Shift bypasses.
+- /way coordinate commands and a waypoint arrow using the client's zone data.
+
+Install the MeffortSuite folder in Interface/AddOns and reload. Existing saved preferences are retained. Floating loot uses an available nameplate screen position or the loot-click position; AoE loot is combined. Loot receipt formats use native localized messages where available. Spell explanations and tooltip-header parsing use English data. Optional standalone MeffortWand takes priority over the suite's wand controls.
+
+Use /msuite diagnostics for session status, or /msuite export for a copyable report after an interface failure. Export before reloading to retain recorded events.
+
+Code is licensed under MIT. Bundled spell data is attributed under CC BY 4.0, and the upstream EnchantQueue MIT notice is included. This unofficial addon is not affiliated with Blizzard.
