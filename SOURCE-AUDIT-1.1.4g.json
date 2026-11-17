@@ -1,9 +1,23 @@
 {
-  "version": "1.1.4f",
-  "text_files_scanned": 27,
+  "version": "1.1.4g",
+  "packaged_files": 32,
+  "lua_modules": 21,
+  "text_files_scanned": 28,
   "prompt_or_model_remnants": [],
   "legal_notices": "byte-identical",
-  "executable_changes": "action-text module only; versions updated in core and settings",
+  "changed_files_from_1.1.4f": [
+    "CHANGELOG.txt",
+    "MeffortSuite.lua",
+    "MeffortSuite.toc",
+    "MeffortSuiteBank.lua",
+    "MeffortSuiteCore.lua",
+    "MeffortSuiteFishing.lua",
+    "MeffortSuiteFishingAudio.lua",
+    "MeffortSuiteGossipServices.lua",
+    "MeffortSuiteRanged.lua",
+    "MeffortSuiteSettingsUI.lua",
+    "README.txt"
+  ],
   "textures": [
     {
       "name": "MeffortSuiteIcon.tga",

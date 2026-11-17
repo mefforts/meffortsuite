@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.4f validation
+# MeffortSuite 1.1.4g validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -82,6 +82,16 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - Range-state colors come from Blizzard's existing range-indicator update. The addon adds no range polling or new protected action queries. Hooks record readable native colors; all custom color and geometry writes remain outside combat. Unknown colors are left untouched.
 - A lexical comparison confirms that comment cleanup leaves executable tokens and string literals unchanged in other feature modules. Model/prompt scans include the entire spell data, shipped text, secure strings and comments. Required MIT and CC BY notices remain included.
 - In Forever, configure a distinctive custom bar-text color, move into/out of range repeatedly, change target, page and bindings, open/close settings and change fonts, and toggle styling/master while red. Repeat on pet and multibars, in combat and outside combat. Verify native red remains visible and ordinary colors resume appropriately. Other action-bar addons can affect native update timing; actual rendering and taint remain client checks.
+
+## Added 1.1.4g checks
+
+- Double-click tests capture binding ownership before mouse-down delivery, then dispatch the protected action on release. They cover camera-hidden focus, single-frame and frame-list APIs, explicit UI rejection, unknown focus, long holds, expiry, combat, equipment changes and queued callback cancellation. Actual client input ordering remains an in-game check.
+- Coexistence tests load the actual local MeffortWand 1.0.4 modules and both shared-library load orders. Equipping a pole leaves no ranged owner; fishing temporarily owns only its binding; removing the pole restores exactly one correct owner without editing wand macros. The mock retains native state attributes after unregistering a driver.
+- Service tests cover hidden IDs with zero-based native order indexes, absent icon overrides, delayed options, close-before-retry, duplicate-event coordination, Shift release after opening, cost/confirmation rejection, and dedicated Orgrimmar banker selection with general shortcuts disabled.
+- Quiet-audio tests verify the per-character opt-in, only the three named channels changing, restoration after channel stop/disable/master-off/combat/logout, preserved manual changes, validated saved recovery, retry after failed restoration, other-unit filtering and no idle polling. Sound effects and master volume remain unchanged.
+- In Forever, equip a pole and double-right-click the world, turn the camera with a single click, click UI and the bobber, hold the button, change equipment and enter combat mid-gesture. Repeat with standalone MeffortWand enabled/disabled and Suite ranged modes. Confirm ranged controls return after removing the pole.
+- Visit Soran, Karus and Koma with general service shortcuts both on and off; verify one bank opening and Shift bypass. Test a single-option vendor, a quest-bearing NPC, repeated menu refreshes and closing quickly.
+- Enable Quiet fishing audio under Professions. Compare the three channel volumes before/during/after fishing, cancel a cast, catch a fish, adjust a volume manually, toggle the feature/master, reload and relog. Confirm effects retain their existing volume and the bite remains audible. Native sound-channel behavior and logout persistence need client verification; a hard crash cannot guarantee newly saved recovery data.
 
 ## Required in-game checks
 

@@ -1,0 +1,16 @@
+MeffortSuite 1.1.4g
+
+Fishing
+- Recognize world clicks when native camera turning hides mouse focus.
+- Prepare the secure double-click action between clicks so the second release can cast.
+- Cancel pending casts on UI clicks, combat, loot, equipment and feature changes.
+- Restore ranged controls after removing a fishing pole; retain standalone MeffortWand priority.
+- Add optional Quiet fishing audio under Professions, off by default per character.
+- Quiet mode mutes music, ambience and dialogue during Fishing with a pole equipped. Sound effects and master volume stay unchanged.
+- Restore prior channel volumes afterward or when disabled, retaining manual volume changes.
+
+Dialogue Shortcuts
+- Support native indexed service choices whose option IDs are hidden by the client.
+- Handle zero-valued icon overrides and delayed banker menu data.
+- Share selection guards with Orgrimmar bank shortcuts, including when general service shortcuts are off.
+- Preserve Shift bypass through delayed menu updates; retain cost, confirmation, combat and quest guards.
