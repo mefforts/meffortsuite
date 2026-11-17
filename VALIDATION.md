@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.4h validation
+# MeffortSuite 1.1.5 validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -100,6 +100,14 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - The whole-TOC master-disable test now runs without any channel API to verify restoration and retention of the character preference. MeffortWand ownership checks continue to exercise the actual local standalone modules in both load orders.
 - In Forever, confirm double-right-click casts with the camera stationary and that ordinary UI clicks, single camera clicks and bobber clicks retain their expected behavior. If casting still fails, /msuite fishing status now distinguishes empty background from unavailable focus APIs and includes physical casting-button release counts.
 - Enable quiet audio with a pole already equipped before casting, cast and cancel repeatedly, loot the bobber, enter combat, remove/re-equip the pole, toggle the feature/master and reload. Check the three affected channels restore on removal/disable and manual adjustments survive. Other effects remain audible at their current volume.
+
+## Added 1.1.5 checks
+
+- Both blocked and forbidden events provide numbered Windows/Mac export, copy and paste instructions, the Mefforts recipient, triggering-action/NPC/window context and reload/logout warnings. Eighty repeats generate one notice even with the suite master and login message disabled.
+- A blocked tracked Suite call produces help when the client attributes it to another addon. Unrelated addon/macro events remain recorded without Suite notices. Generic localized interface warnings, unavailable/secret values, bounded histories and no-Lua-error reports retain coverage.
+- The explicit report window includes constrained multiline help, automatic text selection, Select report, focus cleanup, window reuse and small-screen scaling. It never opens automatically from an error event. Exported report contents use player-facing sharing instructions.
+- In Forever, verify chat visibility and the numbered steps after a naturally occurring blocked action. Use /msuite export before reload, click Select report and copy/paste into an external text editor. Check the complete report, the three help lines at different UI scales, Mac shortcuts if applicable, and that repeated events do not flood chat or open windows. No deliberate protected-action failure is needed to preview the export window.
+- The user reports that the 1.1.4h fishing/audio changes appear to work in-game. This supports those specific changes; it does not establish complete client validation of every feature or taint path.
 
 ## Required in-game checks
 

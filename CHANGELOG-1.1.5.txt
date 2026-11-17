@@ -1,0 +1,18 @@
+MeffortSuite 1.1.5
+
+Diagnostics and Support
+- Show numbered export instructions in chat after a reported Suite/Wand or generic blocked interface action, once per UI session.
+- Explain /msuite export, Select report, copying on Windows/Mac, and pasting a bug report to Mefforts outside the game.
+- Ask for the action, NPC or window involved and warn players to export before reloading or logging out.
+- Repeat the sharing instructions in the report window and exported report.
+- Include blocked tracked Suite calls even when the client reports a different addon name; preserve the client's source attribution.
+- Keep reports available without a Lua error and retain bounded event, stack and repeated-failure history.
+
+Fishing and Dialogue
+- Include the latest world-click recognition and secure double-right-click fishing fixes.
+- Quiet fishing audio activates whenever a pole is equipped; no cast is needed.
+- Removing the pole or disabling quiet audio restores prior volumes while retaining manual changes. Sound effects and master volume stay unchanged.
+- Retain MeffortWand input priority and the indexed/delayed banker dialogue fixes.
+
+Release
+- Update version metadata, player documentation and CurseForge upload notes to 1.1.5.

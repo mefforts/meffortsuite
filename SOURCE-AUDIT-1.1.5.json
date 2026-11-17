@@ -1,16 +1,15 @@
 {
-  "version": "1.1.4h",
+  "version": "1.1.5",
   "packaged_files": 32,
   "lua_modules": 21,
   "text_files_scanned": 28,
   "prompt_or_model_remnants": [],
   "legal_notices": "byte-identical",
-  "changed_files_from_1.1.4g": [
+  "changed_files_from_1.1.4h": [
     "CHANGELOG.txt",
     "MeffortSuite.toc",
     "MeffortSuiteCore.lua",
-    "MeffortSuiteFishing.lua",
-    "MeffortSuiteFishingAudio.lua",
+    "MeffortSuiteDiagnosticsUI.lua",
     "MeffortSuiteSettingsUI.lua",
     "README.txt"
   ],
