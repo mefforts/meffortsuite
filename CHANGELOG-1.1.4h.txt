@@ -1,0 +1,13 @@
+MeffortSuite 1.1.4h
+
+Fishing
+- Accept empty successful mouse-focus queries as world background, including before native camera turning starts.
+- Continue rejecting known interface frames, failed focus APIs and unavailable focus APIs.
+- Add casting-button release counts to fishing status for input troubleshooting.
+
+Quiet Fishing Audio
+- Activate whenever a fishing pole is equipped; no cast or channel is required.
+- Keep quiet audio active between casts, while looting, and during combat with the pole equipped.
+- Restore prior volumes when the pole is removed or the feature/suite is disabled.
+- Retain manual volume changes and leave sound effects and master volume unchanged.
+- Update settings and status text to describe pole-based activation.

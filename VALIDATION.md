@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.4g validation
+# MeffortSuite 1.1.4h validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -92,6 +92,14 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - In Forever, equip a pole and double-right-click the world, turn the camera with a single click, click UI and the bobber, hold the button, change equipment and enter combat mid-gesture. Repeat with standalone MeffortWand enabled/disabled and Suite ranged modes. Confirm ranged controls return after removing the pole.
 - Visit Soran, Karus and Koma with general service shortcuts both on and off; verify one bank opening and Shift bypass. Test a single-option vendor, a quest-bearing NPC, repeated menu refreshes and closing quickly.
 - Enable Quiet fishing audio under Professions. Compare the three channel volumes before/during/after fishing, cancel a cast, catch a fish, adjust a volume manually, toggle the feature/master, reload and relog. Confirm effects retain their existing volume and the bite remains audible. Native sound-channel behavior and logout persistence need client verification; a hard crash cannot guarantee newly saved recovery data.
+
+## Added 1.1.4h checks
+
+- Reproduce successful empty focus queries while native camera turning is still inactive. Cover empty arrays, nil returns, modern and legacy APIs, UIParent background, known UI frames, absent APIs and failed queries. The simulated second hardware release reaches the already-bound casting button once.
+- Quiet audio activates before any spell has been cast. Equipment changes control muting/restoration during combat and outside combat. Casting, channel stop/failure, looting and other-unit inventory events cannot switch it off. Sound effects and master volume stay unchanged; manual adjustments and failed-restoration recovery remain covered.
+- The whole-TOC master-disable test now runs without any channel API to verify restoration and retention of the character preference. MeffortWand ownership checks continue to exercise the actual local standalone modules in both load orders.
+- In Forever, confirm double-right-click casts with the camera stationary and that ordinary UI clicks, single camera clicks and bobber clicks retain their expected behavior. If casting still fails, /msuite fishing status now distinguishes empty background from unavailable focus APIs and includes physical casting-button release counts.
+- Enable quiet audio with a pole already equipped before casting, cast and cancel repeatedly, loot the bobber, enter combat, remove/re-equip the pole, toggle the feature/master and reload. Check the three affected channels restore on removal/disable and manual adjustments survive. Other effects remain audible at their current volume.
 
 ## Required in-game checks
 

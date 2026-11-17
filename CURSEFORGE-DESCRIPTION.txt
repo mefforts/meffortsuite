@@ -11,7 +11,7 @@ Bags and banking
 
 Professions
 - Right-click fishing while a fishing pole is equipped, with single- or double-click preferences.
-- Optional Quiet fishing audio under Professions, off by default per character. Music, ambience and dialogue mute during Fishing with a pole equipped and restore afterward. Manual volume changes are retained; sound effects and master volume stay unchanged, so other effects remain audible alongside the bite.
+- Optional Quiet fishing audio under Professions, off by default per character. Equipping a fishing pole mutes music, ambience and dialogue without requiring a cast. Removing the pole or disabling the feature restores previous volumes. Manual volume changes are retained; sound effects and master volume stay unchanged, so other effects remain audible alongside the bite.
 - Enchant Queue beside the Enchanting window, with a separate player input for every enchant and replacement confirmation.
 
 Combat and interface
