@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.5 validation
+# MeffortSuite 1.1.6 validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -108,6 +108,16 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - The explicit report window includes constrained multiline help, automatic text selection, Select report, focus cleanup, window reuse and small-screen scaling. It never opens automatically from an error event. Exported report contents use player-facing sharing instructions.
 - In Forever, verify chat visibility and the numbered steps after a naturally occurring blocked action. Use /msuite export before reload, click Select report and copy/paste into an external text editor. Check the complete report, the three help lines at different UI scales, Mac shortcuts if applicable, and that repeated events do not flood chat or open windows. No deliberate protected-action failure is needed to preview the export window.
 - The user reports that the 1.1.4h fishing/audio changes appear to work in-game. This supports those specific changes; it does not establish complete client validation of every feature or taint path.
+
+## Added 1.1.6 checks
+
+- See release/FEATURE-AUDIT-1.1.6.md for the complete feature/variant inventory and findings. All 21 modules, bindings, documentation and assets are included in the review.
+- New physical-ranged tests cover class defaults, class/mode/weapon eligibility, in/out-of-combat swaps across Throw/Bow/Gun/Crossbow without writes, missing item caches, target/modifier/pole states, combat reload, full slots, account/custom ownership, manual edits and native-style conditions.
+- The shared-manager suite covers normal and sequence bodies, exact ownership, localization/length limits, read/write/count failures, explicit-only cleanup, partial deletion, reindexing and both actual Wand load orders. Sequence behavior also runs through the actual Wand runtime after the library upgrade and Suite cleanup.
+- Single-fishing tests capture the binding before mouse-down, require a physical release, and cover first press, UI/left clicks, channel/loot completion, mode/master/equipment/combat changes and no idle polling. Double-click tests remain intact.
+- Whole-TOC tests exercise dedicated flight indexes/delays/cost/Shift bypass and nested bank/taxi reopen events. Banking tests check post-pickup access/destination/cursor changes, explicit native refusals and invalid merchant amounts. Waypoint tests ensure invalid native coordinates do not reach geometry.
+- The prior 1.1.5 source reproduces three failures under the same fixtures: a combat Throw-to-Gun swap attempts Throw, a Throw-to-Gun-to-Bow sequence with Wand's version-10 manager creates two macros and loses its binding, and the first single-fishing click casts zero times. The revised cases pass.
+- Complete the client checks in the audit before broad release, especially actual native equipped-weapon conditions and input ordering. Simulations do not establish native taint safety or every addon combination.
 
 ## Required in-game checks
 

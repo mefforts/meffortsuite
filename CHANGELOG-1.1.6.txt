@@ -1,0 +1,24 @@
+MeffortSuite 1.1.6
+
+Ranged Attacks and Macros
+- Warriors and rogues use one native weapon-aware macro for Throw, Shoot Bow, Shoot Gun and Shoot Crossbow, including weapon swaps during combat.
+- Gate right-click and Shift controls by the equipped weapon; missing item-cache data no longer falls back to Throw.
+- Initialize ranged controls after combat when the UI was reloaded during combat.
+- Upgrade the shared manager while retaining standalone MeffortWand normal/sequence modes and priority in both load orders.
+- Preserve account/custom macros, verify writes and lengths, avoid update recursion, and clean duplicates only on explicit request.
+- Withdraw user-edited macro actions until recovery and refresh peers after explicit cleanup.
+
+Fishing and Dialogue
+- Prepare single-click fishing before the first press; restore readiness after casts, loot and UI clicks without automatic casting or idle polling.
+- Retain default double-click behavior and pole-based quiet audio.
+- Apply common indexed/delayed service guards to dedicated flight shortcuts, with cost/confirmation and Shift-bypass checks.
+- Prevent nested bank/taxi close events from leaving stale selection markers.
+
+Banking, Merchants and Travel
+- Recheck bank access, cancellation and destination after pickup; restore only a matching owned cursor item.
+- Stop selective transfers when source stack counts are unknown or invalid.
+- Reject invalid monetary values and report explicit native sale, repair, deposit and sort refusals accurately.
+- Skip invalid native map coordinates and minimap geometry.
+
+Validation
+- Review all feature modules and documented modes, expand variant/ownership regressions, and retain the blocked-action export instructions.

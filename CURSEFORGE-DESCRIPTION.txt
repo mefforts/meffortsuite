@@ -15,7 +15,8 @@ Professions
 - Enchant Queue beside the Enchanting window, with a separate player input for every enchant and replacement confirmation.
 
 Combat and interface
-- Right-click ranged attacks, a conservative target-range warning and Mage Arcane Blast tracking on Blizzard Tracked Buffs.
+- Right-click ranged attacks, with native Throw/Bow/Gun/Crossbow selection for warriors and rogues even during combat weapon swaps. One macro is retained, class defaults are unchanged, and account/custom macros are preserved.
+- A conservative target-range warning and Mage Arcane Blast tracking on Blizzard Tracked Buffs.
 - Custom action-bar keybinding text with a live position preview. Native red out-of-range warnings take priority over custom colors.
 - English spell explanations, tooltip badges, palettes and rank alerts.
 
