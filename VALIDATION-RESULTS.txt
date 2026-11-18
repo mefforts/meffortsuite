@@ -4,28 +4,28 @@ PASS: bindings XML and TOC load entries
 Running test_action_range_colors.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.025s
+Ran 10 tests in 0.014s
 
 OK
 
 Running test_bank_inclusions.py
 ...............
 ----------------------------------------------------------------------
-Ran 15 tests in 0.020s
+Ran 15 tests in 0.022s
 
 OK
 
 Running test_bank_inventory.py
 ....................
 ----------------------------------------------------------------------
-Ran 20 tests in 0.026s
+Ran 20 tests in 0.029s
 
 OK
 
 Running test_client_call_guard.py
 ............
 ----------------------------------------------------------------------
-Ran 12 tests in 0.016s
+Ran 12 tests in 0.018s
 
 OK
 
@@ -38,35 +38,35 @@ test_overlay_hides_for_hidden_ancestor_and_master (__main__.CombatTests.test_ove
 test_range_legacy_controls_and_escape (__main__.CombatTests.test_range_legacy_controls_and_escape) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.007s
+Ran 6 tests in 0.006s
 
 OK
 
 Running test_core.py
 .............
 ----------------------------------------------------------------------
-Ran 13 tests in 0.013s
+Ran 13 tests in 0.012s
 
 OK
 
 Running test_diagnostics.py
-.........
+..........
 ----------------------------------------------------------------------
-Ran 9 tests in 0.053s
+Ran 10 tests in 0.051s
 
 OK
 
 Running test_enchant.py
-.............................
+.......................................
 ----------------------------------------------------------------------
-Ran 29 tests in 0.041s
+Ran 39 tests in 0.065s
 
 OK
 
 Running test_fishing_audio.py
 .........
 ----------------------------------------------------------------------
-Ran 9 tests in 0.006s
+Ran 9 tests in 0.005s
 
 OK
 
@@ -94,28 +94,28 @@ OK
 Running test_gossip_services.py
 ........................
 ----------------------------------------------------------------------
-Ran 24 tests in 0.032s
+Ran 24 tests in 0.035s
 
 OK
 
 Running test_interactions.py
 .............
 ----------------------------------------------------------------------
-Ran 13 tests in 0.012s
+Ran 13 tests in 0.015s
 
 OK
 
 Running test_load.py
 ................
 ----------------------------------------------------------------------
-Ran 16 tests in 0.763s
+Ran 16 tests in 0.828s
 
 OK
 
 Running test_loot_value.py
 .............................
 ----------------------------------------------------------------------
-Ran 29 tests in 0.036s
+Ran 29 tests in 0.031s
 
 OK
 
@@ -129,35 +129,35 @@ OK
 Running test_package.py
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 1.153s
+Ran 6 tests in 1.219s
 
 OK
 
 Running test_quest_geometry_ownership.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.031s
+Ran 10 tests in 0.033s
 
 OK
 
 Running test_quest_gutter_drift.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.064s
+Ran 10 tests in 0.073s
 
 OK
 
 Running test_quest_inline.py
 ..................
 ----------------------------------------------------------------------
-Ran 18 tests in 0.035s
+Ran 18 tests in 0.037s
 
 OK
 
 Running test_quest_inline_contract.py
 ...
 ----------------------------------------------------------------------
-Ran 3 tests in 0.007s
+Ran 3 tests in 0.006s
 
 OK
 
@@ -171,7 +171,7 @@ OK
 Running test_quest_native_layouts.py
 .......
 ----------------------------------------------------------------------
-Ran 7 tests in 0.015s
+Ran 7 tests in 0.014s
 
 OK
 
@@ -185,35 +185,35 @@ OK
 Running test_quest_priority.py
 ................
 ----------------------------------------------------------------------
-Ran 16 tests in 0.034s
+Ran 16 tests in 0.030s
 
 OK
 
 Running test_quest_render_regression.py
 ............
 ----------------------------------------------------------------------
-Ran 12 tests in 0.065s
+Ran 12 tests in 0.054s
 
 OK
 
 Running test_ranged_variants.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.072s
+Ran 10 tests in 0.068s
 
 OK
 
 Running test_settings.py
 ...........
 ----------------------------------------------------------------------
-Ran 11 tests in 0.032s
+Ran 11 tests in 0.029s
 
 OK
 
 Running test_shared_macros.py
 ...............................
 ----------------------------------------------------------------------
-Ran 31 tests in 0.026s
+Ran 31 tests in 0.029s
 
 OK
 
@@ -227,7 +227,7 @@ PASS: unsupported mode is normalized
 Running test_way_commands.py
 ..................
 ----------------------------------------------------------------------
-Ran 18 tests in 0.027s
+Ran 18 tests in 0.033s
 
 OK
 

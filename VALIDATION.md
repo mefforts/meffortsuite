@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.6 validation
+# MeffortSuite 1.1.7 validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -118,6 +118,14 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - Whole-TOC tests exercise dedicated flight indexes/delays/cost/Shift bypass and nested bank/taxi reopen events. Banking tests check post-pickup access/destination/cursor changes, explicit native refusals and invalid merchant amounts. Waypoint tests ensure invalid native coordinates do not reach geometry.
 - The prior 1.1.5 source reproduces three failures under the same fixtures: a combat Throw-to-Gun swap attempts Throw, a Throw-to-Gun-to-Bow sequence with Wand's version-10 manager creates two macros and loses its binding, and the first single-fishing click casts zero times. The revised cases pass.
 - Complete the client checks in the audit before broad release, especially actual native equipped-weapon conditions and input ordering. Simulations do not establish native taint safety or every addon combination.
+
+## Added 1.1.7 checks
+
+- Enchant Queue shows its two controls before the configuration panel is ever opened. Next is gated by actual queue readiness; Queue shows the count. Both controls use UIParent-owned frames and absolute positions read from the native Enchant button, with no native geometry writes or native parenting.
+- A UI-flow test opens Queue, drags the target, enters a count, adds the selected recipe, closes configuration, clicks Next and tracks the matching success. Closing only configuration no longer resets an owned in-flight cast. Existing replacement, uncertainty, recipe/target/count and manual-cast guards remain covered.
+- Layout tests cover unchanged-placement deduplication, native button movement, scale conversion and the compact fallback above Enchant. Close/master/feature/profession changes stop layout updates. A restricted combat snippet hides/disarms a prepared external Next action before ordinary callbacks; after combat, controls return without casting.
+- Failed preparation with configuration closed produces a bounded chat explanation. /msuite enchant status returns status without opening configuration, and diagnostics include queued count, Next visibility, placement and request phase.
+- In Forever, open Enchanting and confirm Queue/Next are visible by the native Enchant button. Drag an inexpensive target, add two enchants and use Next with configuration open/closed. Check the separate replacement click, matching counts, moving/minimizing the native window, several UI scales, the narrow-layout fallback, combat withdrawal, feature/master toggles and closing/reopening Enchanting. Verify tooltip/chat feedback, the existing keybinding and /msuite enchant status. Automated geometry and click dispatch cannot establish actual rendering or native protected input.
 
 ## Required in-game checks
 

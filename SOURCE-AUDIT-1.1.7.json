@@ -1,26 +1,19 @@
 {
-  "version": "1.1.6",
+  "version": "1.1.7",
   "packaged_files": 32,
   "lua_modules": 21,
   "text_files_scanned": 28,
   "prompt_or_model_remnants": [],
   "legal_notices": "byte-identical",
-  "unit_test_methods": 390,
+  "unit_test_methods": 401,
   "regression_scripts": 32,
   "tooltip_script_checks": 5,
-  "changed_files_from_1.1.5": [
+  "changed_files_from_1.1.6": [
     "CHANGELOG.txt",
-    "MeffortRightClickShared.lua",
     "MeffortSuite.toc",
-    "MeffortSuiteBank.lua",
-    "MeffortSuiteBankSelective.lua",
     "MeffortSuiteCore.lua",
-    "MeffortSuiteFishing.lua",
-    "MeffortSuiteFlightMasters.lua",
-    "MeffortSuiteInventory.lua",
-    "MeffortSuiteRanged.lua",
+    "MeffortSuiteEnchantQueue.lua",
     "MeffortSuiteSettingsUI.lua",
-    "MeffortSuiteWay.lua",
     "README.txt"
   ],
   "textures": [

@@ -1,0 +1,14 @@
+MeffortSuite 1.1.7
+
+Enchant Queue
+- Show Next enchant and Queue beside Blizzard's Enchant button whenever Enchanting is open and the feature is enabled.
+- Use a compact row above Enchant when the right edge has insufficient room.
+- Show the remaining enchant count on Queue and allow Next/keybindings with the configuration panel closed.
+- Keep owned cast tracking when only the configuration panel closes.
+- Follow native button movement and UI scale using private controls without moving or parenting to native frames.
+- Recover late-loading profession data and native button positions without reopening.
+- Block Next when the native recipe tab is hidden.
+- Hide/disarm Next during combat and hide both controls when Enchanting closes or the feature/suite is disabled.
+- Retain recipe/target/quantity verification, one player input per action and separate replacement confirmation.
+- Explain failed preparation in chat when the configuration panel is closed, with duplicate-message suppression.
+- Add /msuite enchant status and include control/layout/queue state in diagnostic exports.

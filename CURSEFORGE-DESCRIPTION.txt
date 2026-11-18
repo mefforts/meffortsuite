@@ -12,7 +12,7 @@ Bags and banking
 Professions
 - Right-click fishing while a fishing pole is equipped, with single- or double-click preferences.
 - Optional Quiet fishing audio under Professions, off by default per character. Equipping a fishing pole mutes music, ambience and dialogue without requiring a cast. Removing the pole or disabling the feature restores previous volumes. Manual volume changes are retained; sound effects and master volume stay unchanged, so other effects remain audible alongside the bite.
-- Enchant Queue beside the Enchanting window, with a separate player input for every enchant and replacement confirmation.
+- Queue and Next enchant controls beside Blizzard's Enchant button, with a compact row above when space is limited. Configure a recipe, target and repeat count through Queue; Next works with that window closed and requires a separate player input for each enchant and replacement confirmation.
 
 Combat and interface
 - Right-click ranged attacks, with native Throw/Bow/Gun/Crossbow selection for warriors and rogues even during combat weapon swaps. One macro is retained, class defaults are unchanged, and account/custom macros are preserved.
