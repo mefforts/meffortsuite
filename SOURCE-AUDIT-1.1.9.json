@@ -1,21 +1,13 @@
 {
-  "version": "1.1.8",
+  "version": "1.1.9",
   "packaged_files": 32,
   "lua_modules": 21,
   "text_files_scanned": 28,
   "prompt_or_model_remnants": [],
   "legal_notices": "byte-identical",
-  "unit_test_methods": 410,
+  "unit_test_methods": 428,
   "regression_scripts": 32,
   "tooltip_script_checks": 5,
-  "changed_files_from_1.1.7": [
-    "CHANGELOG.txt",
-    "MeffortSuite.toc",
-    "MeffortSuiteCore.lua",
-    "MeffortSuiteEnchantQueue.lua",
-    "MeffortSuiteSettingsUI.lua",
-    "README.txt"
-  ],
   "textures": [
     {
       "name": "MeffortSuiteIcon.tga",
@@ -37,5 +29,13 @@
       "size": "32x16",
       "bits": 32
     }
+  ],
+  "changed_files_from_1.1.8": [
+    "CHANGELOG.txt",
+    "MeffortSuite.toc",
+    "MeffortSuiteCore.lua",
+    "MeffortSuiteLootValue.lua",
+    "MeffortSuiteSettingsUI.lua",
+    "README.txt"
   ]
 }

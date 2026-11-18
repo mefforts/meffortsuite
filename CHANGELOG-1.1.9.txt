@@ -1,0 +1,11 @@
+MeffortSuite 1.1.9
+
+Loot Pop-ups
+- Add Use Auctionator AH values under /msuite > Bags; off by default.
+- Use cached per-item AH estimates by full item link and multiply by the quantity actually received.
+- Keep actual coins and the all-quality/grey-only filter unchanged.
+- Use vendor prices for missing, invalid or unavailable AH data, bind-on-pickup items and quest items.
+- Apply pricing preferences from the next loot window; save account-wide.
+- Keep requests bounded to one public price lookup per included receipt; do not start auction scans.
+- Include the selected pricing mode, API availability and last AH/vendor item counts in diagnostics.
+- Preserve all previous features and settings. Auctionator remains optional.

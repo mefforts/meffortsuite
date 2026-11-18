@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.8 validation
+# MeffortSuite 1.1.9 validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -149,3 +149,10 @@ Record the client build and test with Lua errors visible. Use /msuite export bef
 8. **Tooltips/action labels:** insufficient resources, missing reagents, forms/range warnings, compare across reload/master off/on, other addons refreshing tooltip text, action-label drag/release, failed styling and restoration after disable.
 
 Repeat relevant checks with supported standalone addons and common UI/bag replacements. Record actual client results before uploading the release. Automated results do not establish in-game completion.
+
+## Added 1.1.9 checks
+
+- Opt-in Auctionator pricing uses the public v1 item-link API with caller name and full variant link, once per included receipt. Missing/link-incompatible providers, thrown errors, missing/zero/negative/fractional/nonfinite/secret/oversized returns use vendor fallback. No item-ID price substitution is guessed.
+- Tests cover exact coins plus AH stack values, mixed fallback totals, bind-on-pickup/quest exclusion, zero-vendor auctionable items, all-quality versus grey-only filtering, unreceived/other-player loot, metadata loading, bounded provider retries, late provider availability, per-receipt stability, next-window price refresh, mid-window preference changes and total overflow omission.
+- Settings tests verify off-by-default behavior, account persistence, navigation and reverting to vendor mode. Core tests preserve boolean preferences and reject malformed values.
+- In Forever, enable Use Auctionator AH values under Bags with Auctionator loaded and populated. Compare a tradeable stack against its per-unit AH tooltip value, then test a missing AH price, bind-on-pickup item, coins and grey-only mode. Turn the option off and compare vendor totals. Disable Auctionator and confirm the setting remains saved while totals use vendor values. Live compatibility with the installed Auctionator build and cached data needs this check.
