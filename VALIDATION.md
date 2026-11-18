@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.7 validation
+# MeffortSuite 1.1.8 validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -126,6 +126,14 @@ Target: WoW Forever, Interface 16001. The interface declaration remains unchange
 - Layout tests cover unchanged-placement deduplication, native button movement, scale conversion and the compact fallback above Enchant. Close/master/feature/profession changes stop layout updates. A restricted combat snippet hides/disarms a prepared external Next action before ordinary callbacks; after combat, controls return without casting.
 - Failed preparation with configuration closed produces a bounded chat explanation. /msuite enchant status returns status without opening configuration, and diagnostics include queued count, Next visibility, placement and request phase.
 - In Forever, open Enchanting and confirm Queue/Next are visible by the native Enchant button. Drag an inexpensive target, add two enchants and use Next with configuration open/closed. Check the separate replacement click, matching counts, moving/minimizing the native window, several UI scales, the narrow-layout fallback, combat withdrawal, feature/master toggles and closing/reopening Enchanting. Verify tooltip/chat feedback, the existing keybinding and /msuite enchant status. Automated geometry and click dispatch cannot establish actual rendering or native protected input.
+
+## Added 1.1.8 checks
+
+- The native item-widget contract is enforced in the fixture: legacy ItemButtonTemplate inheritance fails. The 1.1.7 source stops construction under that condition, caches the partial panel and creates zero Add controls. Updated code uses the native ItemButton intrinsic, shows Add selected/count fields, and gives empty-list guidance.
+- Injected construction failure stays hidden, is reported, preserves queue data and can be retried. The public panel and Escape registration are published only after construction completes. The setup window is raised when opened.
+- A full native-selection scenario selects a recipe/item through the native model, opens Queue, clicks Add selected, observes Next enabled and then makes one requested craft. Add/import does not cast or change the native allocation. Existing configured targets remain intact; empty stale targets can be recovered, and target-slot clicks explicitly import selection.
+- Closed-setup inventory updates and returning from a hidden recipe tab refresh Next readiness without reopening configuration. Tooltip/status query the current blocked reason rather than cached success text. Version, enabled state and setup failure details are included in status/reporting.
+- In Forever, install 1.1.8 and reload. Select an inexpensive recipe/target in Enchanting, open Queue and verify target/count/Add selected are present. Add one, verify the count and enabled Next, then craft once. Repeat target dragging/click import, different explicit queue targets, empty/stale targets, setup close, bag moves and recipe-tab changes. If still blocked, export before reload; status now includes the build and actual blocker. Native construction/rendering/casting remain client checks.
 
 ## Required in-game checks
 

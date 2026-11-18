@@ -1,0 +1,16 @@
+MeffortSuite 1.1.8
+
+Enchant Queue Setup
+- Replace the legacy item-button template with the native ItemButton widget.
+- Build setup while hidden and publish it only after its controls are complete.
+- Report construction errors, discard the incomplete window and allow an explicit retry without losing queue data.
+- Show Add selected and an empty-list instruction; start the repeat field at one.
+- Reuse Blizzard's selected target when adding an enchant to an unconfigured queue. Keep existing configured queue targets intact.
+- Allow clicking the target slot to explicitly use Blizzard's selected item; dragging and Alt-click clearing remain available.
+- Recover a missing saved target from native selection when the queue is empty.
+
+Readiness and Diagnostics
+- Refresh target readiness on inventory changes with setup closed, and restore readiness when returning to the native recipe tab.
+- Read the current blocked reason in tooltips/status instead of relying on cached success text.
+- Include enabled/disabled state, construction failures and the current blocker in reports; /msuite enchant status also identifies the version.
+- Keep recipe, target, quantity, replacement and uncertain-result verification. Adding/configuring a queue never casts an enchant.
