@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.11 validation
+# MeffortSuite 1.1.12 validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -172,3 +172,10 @@ Repeat relevant checks with supported standalone addons and common UI/bag replac
 - Combined-value regressions cover exact coins on each side, mixed AH/vendor fallback, no provider, invalid/failed prices, bound items, grey-only mode, zero-vendor positive-AH loot, metadata waits with one provider query, per-window mode snapshots, saved single-value preference, late receipts and pool baselines, overflow on either side, preview reuse and narrow-screen sizing.
 - Settings/Core tests verify both options start off, save account-wide, survive navigation and normalize malformed preferences. The full TOC includes the independent FastLoot module.
 - In Forever, enable native Auto Loot and Fast auto loot; test normal/modified/manual looting, full bags, bind confirmation, currency, fishing, inventory containers, combat and another loot addon. Confirm native controls remain usable and no acceptance is automated. Compare both values with received coins, vendor prices and Auctionator's cached per-unit value. Test missing prices, quality filters, quick/late receipts, previews and UI scaling. Actual speed, native protection and rendering require these live checks.
+
+## Added 1.1.12 checks
+
+- Reward tests cover full-stack vendor values, choices and fixed rewards, NPC/log contexts without guessing API fallbacks, stale quest IDs, row reuse, currencies, metadata loading with one request, compact names, oversized text, viewport clipping/scroll withdrawal, queued-close cancellation, combat/master/world/parent cleanup, invalid/secret values, zero-value items, tooltip refresh deduplication, forbidden buttons, late discovery and scale conversion. Native geometry/name writes and reward claiming are forbidden in the fixture.
+- Settings tests exercise Help task navigation and Back with unsaved drafts, reward toggle persistence, loot subpage/duration controls, merchant prerequisites with click-time rechecks and copying a report while the suite is off. All pages and small-screen scaling still build. Core tests cover new command destinations, preference normalization and reward diagnostics.
+- Float tests check the six-second default, stable reading time followed by a gradual fade, bounded duration and new-float-only changes. Existing pool/baseline, dual-price, receipt and cleanup regressions remain in the full run.
+- In Forever, inspect long/short/multiline rewards, stacks, unsellable items, NPC offers/completions and quest-log panels. Scroll and switch quests quickly; compare labels/tooltips against native per-unit prices and counts. Check item cache delays, combat and UI scale. Confirm no changed reward layout or automatic selection. Use the new help paths with a draft, test an unavailable merchant action, and preview six-second/custom-duration floats. Live typography, clipping, protected behavior and event ordering remain client checks.

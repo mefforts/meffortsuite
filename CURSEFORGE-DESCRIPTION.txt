@@ -6,6 +6,7 @@ Open /msuite or Options > AddOns > MeffortSuite. Each feature can be configured 
 
 Bags and banking
 - Optional fast auto loot follows native auto-loot/modifier choices, with native confirmations and combat handling.
+- Quest reward vendor labels show full-stack prices without choosing a reward; compact layouts retain tooltip values.
 - Floating loot totals with native coin icons, a gentle rise and fade, and confirmed loot money plus item vendor value. All item qualities are included by default; grey-only mode is available. Optional Auctionator AH estimates and a combined vendor + (AH) display fall back to vendor prices and start off.
 - Bag sorting, grey-item sales, repairs using personal gold, reagent deposits and personal-bank sorting.
 - Per-character banking inclusion and exclusion lists using exact item names or numeric IDs.
@@ -31,3 +32,5 @@ Install the MeffortSuite folder in Interface/AddOns and reload. Existing saved p
 If an interface action fails, export before reloading or logging out: type /msuite export, click Select report, and press Ctrl+C (Command+C on Mac). Switch out of the game and paste the report into your bug report to Mefforts with Ctrl+V (Command+V on Mac). Include what you clicked or pressed and the NPC or window involved. A single chat notice explains these steps for reported Suite/Wand or generic blocked actions; no Lua error is needed. /msuite diagnostics shows session status in chat.
 
 Code is licensed under MIT. Bundled spell data is attributed under CC BY 4.0, and the upstream EnchantQueue MIT notice is included. This unofficial addon is not affiliated with Blizzard.
+
+Feature pages include setup guidance and a ? help page. Loot controls are grouped under Bags > Looting & loot value. Floats last six seconds by default, with an adjustable 2–12 second duration.
