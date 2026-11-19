@@ -1,9 +1,9 @@
-# MeffortSuite 1.1.9
+# MeffortSuite 1.1.10
 
 ## Upload details
 
-- File: `MeffortSuite-1.1.9.zip`
-- Display name: `MeffortSuite 1.1.9`
+- File: `MeffortSuite-1.1.10.zip`
+- Display name: `MeffortSuite 1.1.10`
 - Addon folder: `MeffortSuite`
 - Client target: WoW Forever, Interface `16001`
 - Dependencies: none required; optional MeffortWand compatibility and Auctionator pricing
@@ -11,7 +11,7 @@
 
 Select only a CurseForge game-version entry that matches the intended client. Availability of a matching Forever entry has not been verified; do not substitute unrelated client metadata. No project ID or upload token is needed to upload manually.
 
-Use `CURSEFORGE-DESCRIPTION.txt` for the project page and `CHANGELOG-1.1.9.txt` for upload notes.
+Use `CURSEFORGE-DESCRIPTION.txt` for the project page and `CHANGELOG-1.1.10.txt` for upload notes.
 
 ## Project description
 
@@ -31,7 +31,7 @@ Quiet fishing audio is off by default under Professions. It mutes music, ambienc
 
 ## Release audit
 
-LOOT-PRICING-1.1.9.md records the optional public-API pricing integration, fallback behavior and client checks. FEATURE-AUDIT-1.1.6.md and ENCHANT-REVIEW-1.1.8.md retain the earlier feature and Enchant Queue audits. Native input/taint/rendering and server timing remain separate from simulated API tests.
+BUG-REVIEW-1.1.10.md records this release's reproduced loot/merchant findings and regression checks. LOOT-PRICING-1.1.9.md, FEATURE-AUDIT-1.1.6.md and ENCHANT-REVIEW-1.1.8.md retain the earlier pricing, feature and Enchant Queue audits. Native input/taint/rendering and server timing remain separate from simulated API tests.
 
 ## Support reports
 
@@ -39,13 +39,13 @@ Blocked-action notices explain the export workflow once per UI session. Players 
 
 ## File changelog
 
-Use the `MeffortSuite 1.1.9` section from `MeffortSuite/CHANGELOG.txt` for the file's changelog.
+Use the `MeffortSuite 1.1.10` section from `MeffortSuite/CHANGELOG.txt` for the file's changelog.
 
 ## Final checks
 
 - Automated tests and archive checks: record results in `VALIDATION-RESULTS.txt`.
 - ZIP root: exactly one `MeffortSuite/` folder; required licenses and all referenced textures included.
-- Version: TOC, runtime, About, README, filename, and upload display name agree on `1.1.9`.
+- Version: TOC, runtime, About, README, filename, and upload display name agree on `1.1.10`.
 - Source/text audit: no conversational transcripts, prompt remnants, draft labels, or scratch files in the archive.
 - In-game validation: use `VALIDATION.md`; actual protected actions, server timing, and rendering remain unverified until tested in the target client.
 - CurseForge acceptance/game-version selection: confirm on the upload page. Preparing this archive does not submit or publish it.

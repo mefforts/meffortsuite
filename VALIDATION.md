@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.9 validation
+# MeffortSuite 1.1.10 validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -156,3 +156,11 @@ Repeat relevant checks with supported standalone addons and common UI/bag replac
 - Tests cover exact coins plus AH stack values, mixed fallback totals, bind-on-pickup/quest exclusion, zero-vendor auctionable items, all-quality versus grey-only filtering, unreceived/other-player loot, metadata loading, bounded provider retries, late provider availability, per-receipt stability, next-window price refresh, mid-window preference changes and total overflow omission.
 - Settings tests verify off-by-default behavior, account persistence, navigation and reverting to vendor mode. Core tests preserve boolean preferences and reject malformed values.
 - In Forever, enable Use Auctionator AH values under Bags with Auctionator loaded and populated. Compare a tradeable stack against its per-unit AH tooltip value, then test a missing AH price, bind-on-pickup item, coins and grey-only mode. Turn the option off and compare vendor totals. Disable Auctionator and confirm the setting remains saved while totals use vendor values. Live compatibility with the installed Auctionator build and cached data needs this check.
+
+## Added 1.1.10 checks
+
+- Excluded fishing and item-container windows remain short-lived receipt barriers, even when their slots are empty or unready. Tests reproduce earlier-corpse leakage during and after excluded windows and verify a subsequent normal corpse still works. Known excluded windows do not query loot slots or nameplate geometry.
+- Exact full-link matches across recent eligible windows precede ID fallback. Tests reproduce a late variant crossing two windows with different pricing preferences and positions; the original window retains its receipt and pricing. The existing unique-candidate fallback and ambiguous-variant refusal remain covered.
+- Reused popup slots remember how much of that session was already displayed. A regression forces pool reuse and verifies two later receipts show only their new value, while diagnostics retain the complete session total.
+- Merchant tests cover combat outlasting initial retries, a sale completing before combat interrupts repair, duplicate combat-end events, merchant close, master/preference changes and leaving/re-entering the world. Completed steps are retained; no native request is sent during combat or after visit cancellation.
+- In Forever, verify normal/AoE looting, containers/fishing immediately after corpse looting, rapid variant loot, preview reuse and delayed receipts. At a merchant, enter/leave combat without closing the window and check that each unfinished action occurs once. Close the window or leave the world before pending work executes and confirm cancellation. These live timing/input checks remain separate from regression mocks.

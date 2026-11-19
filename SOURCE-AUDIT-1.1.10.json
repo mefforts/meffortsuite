@@ -1,11 +1,11 @@
 {
-  "version": "1.1.9",
+  "version": "1.1.10",
   "packaged_files": 32,
   "lua_modules": 21,
   "text_files_scanned": 28,
   "prompt_or_model_remnants": [],
   "legal_notices": "byte-identical",
-  "unit_test_methods": 428,
+  "unit_test_methods": 440,
   "regression_scripts": 32,
   "tooltip_script_checks": 5,
   "textures": [
@@ -30,10 +30,11 @@
       "bits": 32
     }
   ],
-  "changed_files_from_1.1.8": [
+  "changed_files_from_1.1.9": [
     "CHANGELOG.txt",
     "MeffortSuite.toc",
     "MeffortSuiteCore.lua",
+    "MeffortSuiteInventory.lua",
     "MeffortSuiteLootValue.lua",
     "MeffortSuiteSettingsUI.lua",
     "README.txt"

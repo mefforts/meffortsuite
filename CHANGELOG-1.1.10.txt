@@ -1,0 +1,14 @@
+MeffortSuite 1.1.10
+
+Loot Totals
+- Prevent fishing and inventory-container receipts from being assigned to recently closed corpses, including delayed receipts and windows with unavailable slots.
+- Prefer exact item links across recent loot windows before using the single-candidate item-ID fallback. Retain the source window's quality/pricing preferences.
+- Keep later popup additions incremental when the display pool has reused the original float.
+- Avoid unnecessary loot and nameplate probes for windows already known to be excluded.
+
+Merchant Recovery
+- Resume unfinished junk sales and personal-gold repairs after combat while the merchant remains open.
+- Preserve completed steps and recheck current settings, combat and merchant state before acting.
+- Cancel pending merchant work when leaving the world.
+
+Existing settings, optional Auctionator pricing and shared fishing/ranged controls are retained.
