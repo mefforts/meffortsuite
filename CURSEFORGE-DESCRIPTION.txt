@@ -5,7 +5,8 @@ Inventory, profession, quest, combat and travel tools for WoW Forever (Interface
 Open /msuite or Options > AddOns > MeffortSuite. Each feature can be configured independently, and the master switch retains your saved preferences.
 
 Bags and banking
-- Floating loot totals with native coin icons, a gentle rise and fade, and confirmed loot money plus item vendor value. All item qualities are included by default; grey-only mode is available. Optional Auctionator AH estimates fall back to vendor prices and start off.
+- Optional fast auto loot follows native auto-loot/modifier choices, with native confirmations and combat handling.
+- Floating loot totals with native coin icons, a gentle rise and fade, and confirmed loot money plus item vendor value. All item qualities are included by default; grey-only mode is available. Optional Auctionator AH estimates and a combined vendor + (AH) display fall back to vendor prices and start off.
 - Bag sorting, grey-item sales, repairs using personal gold, reagent deposits and personal-bank sorting.
 - Per-character banking inclusion and exclusion lists using exact item names or numeric IDs.
 

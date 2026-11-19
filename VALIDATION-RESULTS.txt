@@ -1,31 +1,31 @@
-PASS: 21 Lua files compile under Lua 5.1
+PASS: 22 Lua files compile under Lua 5.1
 PASS: bindings XML and TOC load entries
 
 Running test_action_range_colors.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.015s
+Ran 10 tests in 0.016s
 
 OK
 
 Running test_bank_inclusions.py
 ...............
 ----------------------------------------------------------------------
-Ran 15 tests in 0.020s
+Ran 15 tests in 0.023s
 
 OK
 
 Running test_bank_inventory.py
 ........................
 ----------------------------------------------------------------------
-Ran 24 tests in 0.029s
+Ran 24 tests in 0.028s
 
 OK
 
 Running test_client_call_guard.py
 ............
 ----------------------------------------------------------------------
-Ran 12 tests in 0.016s
+Ran 12 tests in 0.018s
 
 OK
 
@@ -38,28 +38,35 @@ test_overlay_hides_for_hidden_ancestor_and_master (__main__.CombatTests.test_ove
 test_range_legacy_controls_and_escape (__main__.CombatTests.test_range_legacy_controls_and_escape) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.007s
+Ran 6 tests in 0.006s
 
 OK
 
 Running test_core.py
 ..............
 ----------------------------------------------------------------------
-Ran 14 tests in 0.017s
+Ran 14 tests in 0.022s
 
 OK
 
 Running test_diagnostics.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.048s
+Ran 10 tests in 0.052s
 
 OK
 
 Running test_enchant.py
 ................................................
 ----------------------------------------------------------------------
-Ran 48 tests in 0.085s
+Ran 48 tests in 0.086s
+
+OK
+
+Running test_fast_loot.py
+.................
+----------------------------------------------------------------------
+Ran 17 tests in 0.024s
 
 OK
 
@@ -73,147 +80,147 @@ OK
 Running test_fishing_double_click.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.014s
+Ran 10 tests in 0.015s
 
 OK
 
 Running test_fishing_single_click.py
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 0.007s
+Ran 6 tests in 0.008s
 
 OK
 
 Running test_fishing_wand_compat.py
 ...
 ----------------------------------------------------------------------
-Ran 3 tests in 0.028s
+Ran 3 tests in 0.033s
 
 OK
 
 Running test_gossip_services.py
 ........................
 ----------------------------------------------------------------------
-Ran 24 tests in 0.036s
+Ran 24 tests in 0.035s
 
 OK
 
 Running test_interactions.py
 .............
 ----------------------------------------------------------------------
-Ran 13 tests in 0.013s
+Ran 13 tests in 0.014s
 
 OK
 
 Running test_load.py
 ................
 ----------------------------------------------------------------------
-Ran 16 tests in 0.789s
+Ran 16 tests in 0.817s
 
 OK
 
 Running test_loot_value.py
-.....................................................
+...............................................................
 ----------------------------------------------------------------------
-Ran 53 tests in 0.079s
+Ran 63 tests in 0.117s
 
 OK
 
 Running test_options_registration.py
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 0.016s
+Ran 6 tests in 0.018s
 
 OK
 
 Running test_package.py
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 1.214s
+Ran 6 tests in 1.216s
 
 OK
 
 Running test_quest_geometry_ownership.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.028s
+Ran 10 tests in 0.027s
 
 OK
 
 Running test_quest_gutter_drift.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.071s
+Ran 10 tests in 0.077s
 
 OK
 
 Running test_quest_inline.py
 ..................
 ----------------------------------------------------------------------
-Ran 18 tests in 0.039s
+Ran 18 tests in 0.042s
 
 OK
 
 Running test_quest_inline_contract.py
 ...
 ----------------------------------------------------------------------
-Ran 3 tests in 0.006s
+Ran 3 tests in 0.007s
 
 OK
 
 Running test_quest_inline_layering.py
 ...
 ----------------------------------------------------------------------
-Ran 3 tests in 0.007s
+Ran 3 tests in 0.006s
 
 OK
 
 Running test_quest_native_layouts.py
 .......
 ----------------------------------------------------------------------
-Ran 7 tests in 0.015s
+Ran 7 tests in 0.017s
 
 OK
 
 Running test_quest_native_safety.py
 .....
 ----------------------------------------------------------------------
-Ran 5 tests in 0.024s
+Ran 5 tests in 0.022s
 
 OK
 
 Running test_quest_priority.py
 ................
 ----------------------------------------------------------------------
-Ran 16 tests in 0.030s
+Ran 16 tests in 0.033s
 
 OK
 
 Running test_quest_render_regression.py
 ............
 ----------------------------------------------------------------------
-Ran 12 tests in 0.046s
+Ran 12 tests in 0.037s
 
 OK
 
 Running test_ranged_variants.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.080s
+Ran 10 tests in 0.075s
 
 OK
 
 Running test_settings.py
-............
+.............
 ----------------------------------------------------------------------
-Ran 12 tests in 0.039s
+Ran 13 tests in 0.034s
 
 OK
 
 Running test_shared_macros.py
 ...............................
 ----------------------------------------------------------------------
-Ran 31 tests in 0.025s
+Ran 31 tests in 0.030s
 
 OK
 
@@ -227,8 +234,8 @@ PASS: unsupported mode is normalized
 Running test_way_commands.py
 ..................
 ----------------------------------------------------------------------
-Ran 18 tests in 0.027s
+Ran 18 tests in 0.029s
 
 OK
 
-PASS: 32 regression scripts. Client validation remains separate.
+PASS: 33 regression scripts. Client validation remains separate.

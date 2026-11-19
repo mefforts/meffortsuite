@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.10 validation
+# MeffortSuite 1.1.11 validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -164,3 +164,11 @@ Repeat relevant checks with supported standalone addons and common UI/bag replac
 - Reused popup slots remember how much of that session was already displayed. A regression forces pool reuse and verifies two later receipts show only their new value, while diagnostics retain the complete session total.
 - Merchant tests cover combat outlasting initial retries, a sale completing before combat interrupts repair, duplicate combat-end events, merchant close, master/preference changes and leaving/re-entering the world. Completed steps are retained; no native request is sent during combat or after visit cancellation.
 - In Forever, verify normal/AoE looting, containers/fishing immediately after corpse looting, rapid variant loot, preview reuse and delayed receipts. At a merchant, enter/leave combat without closing the window and check that each unfinished action occurs once. Close the window or leave the world before pending work executes and confirm cancellation. These live timing/input checks remain separate from regression mocks.
+
+## Added 1.1.11 checks
+
+- Fast-loot regressions cover off-by-default behavior, deferred snapshot ordering, reverse slot order and compaction, once-per-window behavior, native auto-loot event flags, legacy default/modifier XOR, unavailable APIs/combat state, close/world/disable/master/combat cancellation, mid-pass changes, confirmations/full bags, invalid counts/types, native failures and blocked requests. Real Core guard integration verifies export guidance and suppression after a blocked action.
+- Actual LootValue and FastLoot integration runs with both listener orders. Confirmed self-loot still totals correctly; inventory-container exclusions still suppress floats when fast requests synchronously close the window.
+- Combined-value regressions cover exact coins on each side, mixed AH/vendor fallback, no provider, invalid/failed prices, bound items, grey-only mode, zero-vendor positive-AH loot, metadata waits with one provider query, per-window mode snapshots, saved single-value preference, late receipts and pool baselines, overflow on either side, preview reuse and narrow-screen sizing.
+- Settings/Core tests verify both options start off, save account-wide, survive navigation and normalize malformed preferences. The full TOC includes the independent FastLoot module.
+- In Forever, enable native Auto Loot and Fast auto loot; test normal/modified/manual looting, full bags, bind confirmation, currency, fishing, inventory containers, combat and another loot addon. Confirm native controls remain usable and no acceptance is automated. Compare both values with received coins, vendor prices and Auctionator's cached per-unit value. Test missing prices, quality filters, quick/late receipts, previews and UI scaling. Actual speed, native protection and rendering require these live checks.
