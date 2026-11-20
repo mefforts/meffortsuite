@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.12 validation
+# MeffortSuite 1.1.13 validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -6,7 +6,6 @@ Automated checks and client validation are separate. Run `python tests/run_tests
 
 - Saved Compare mode and master toggles, resource-warning preservation, owned tooltip cleanup.
 - Exclusion changes, cancellation callbacks, partial-stack splits, safe source restoration, delayed slot updates, bounded timeouts, cursor/combat/bank closure, missing APIs, sort option changes, and merchant money retries.
-- Verified enchant staging failure/async recipe selection, master gating, target/recipe readback, owned cast tracking and confirmations, queue scrolling/undo, invalid saved entries and missing capabilities.
 - Exact localized macro identity, custom/account macro preservation, secure binding ownership/state cleanup, fishing release/failure handling, unsupported-API fallbacks.
 - Arcane visibility/layer/scale/cache, hidden cast tracking, range controls, action-label preview/drag behavior.
 - Settings history, full-row toggles, drafts and apply/discard, master counts, contextual action rechecks, viewport scaling, and page construction.
@@ -19,12 +18,11 @@ Automated checks and client validation are separate. Run `python tests/run_tests
 
 Target: WoW Forever, Interface 16001. The interface declaration remains unchanged. No claim is made for other WoW products or server builds.
 
-- Unconfirmed enchant results pause for player verification. Check result never crafts; it offers Count complete / Keep paused / Nothing applied. Missing popup support keeps the operation paused with native-control guidance.
-- Enchant Queue requires actual recipe and item-allocation readback, a verifiable one-craft quantity, secure state handling, and timers. If unavailable, it refuses the queued action and directs the user to Blizzard's craft controls. It does not guess an allocation or fall back to unverified clicks.
 - Selective banking leaves unidentified items and non-reagents without an explicit inclusion in bags. Partial-stack transfers require the split API; confirmation requires matching source and destination updates. Changing exclusions stops future steps but cannot reverse an already-sent transfer request.
 - Combat-safe quest/fishing withdrawal uses Blizzard restricted binding ownership and state/visibility handlers. Quest ownership remains under UIParent; native dialogue frames are not made ancestors of the protected owner. Actual Forever support must be checked in-game. Right-click ranged preference changes requested during combat remain pending until legal after combat.
 - Spell description/header parsing remains English. Numeric item/NPC/weapon identities and localized spell lookups improve compatibility without pretending the prose is translated.
 - UI layout tests use simulated geometry and cannot establish actual font wrapping, clipping, texture appearance, or high-DPI behavior.
+
 
 ## Added 1.1.3 checks
 
@@ -179,3 +177,11 @@ Repeat relevant checks with supported standalone addons and common UI/bag replac
 - Settings tests exercise Help task navigation and Back with unsaved drafts, reward toggle persistence, loot subpage/duration controls, merchant prerequisites with click-time rechecks and copying a report while the suite is off. All pages and small-screen scaling still build. Core tests cover new command destinations, preference normalization and reward diagnostics.
 - Float tests check the six-second default, stable reading time followed by a gradual fade, bounded duration and new-float-only changes. Existing pool/baseline, dual-price, receipt and cleanup regressions remain in the full run.
 - In Forever, inspect long/short/multiline rewards, stacks, unsellable items, NPC offers/completions and quest-log panels. Scroll and switch quests quickly; compare labels/tooltips against native per-unit prices and counts. Check item cache delays, combat and UI scale. Confirm no changed reward layout or automatic selection. Use the new help paths with a draft, test an unavailable merchant action, and preview six-second/custom-duration floats. Live typography, clipping, protected behavior and event ordering remain client checks.
+
+## Added 1.1.13 checks
+
+- Removed the obsolete Enchant Queue test suite with its implementation. Current regressions assert its module, controls and binding are absent; retired commands only explain removal, and character initialization prunes old data.
+- Sound tests cover default-off behavior, category-only changes, prior-zero/manual settings, list validation/deduplication, active-list changes, missing/refused APIs, pending/failed recovery, login/world/master restoration, previous-session recovery before new mutes, quiet-fishing independence and real blocked-action guard suppression.
+- Defaults tests cover reviewed/staged execution, occupied/unknown cursor, combat/held input, audio restoration gates, retained recovery on failures, failed-reload retry, preserved data/other-addon settings and no macro/keybinding mutations. A fresh whole-TOC runtime verifies actual startup reset and class defaults without legacy re-import.
+- UI tests cover review-before-reset, cancellation, separate native/file sound controls, advanced-list navigation and absence of Enchant Queue controls/help. All live pages build with optional APIs absent.
+- In Forever, try native pet sounds with the intended companion. Some footstep files can be shared or outside that category; test verified file IDs separately and check other creature sources. Toggle/master off, change zones, reload and test manual volume changes. For defaults, review scope, confirm with a safe cursor out of combat, check audio restoration and preserved lists, then verify class defaults after reload. Inspect native Enchanting without addon buttons. Actual sound routing and client protection remain live checks.

@@ -11,10 +11,9 @@ Bags and banking
 - Bag sorting, grey-item sales, repairs using personal gold, reagent deposits and personal-bank sorting.
 - Per-character banking inclusion and exclusion lists using exact item names or numeric IDs.
 
-Professions
+Fishing and sounds
 - Right-click fishing while a fishing pole is equipped, with single- or double-click preferences.
-- Optional Quiet fishing audio under Professions, off by default per character. Equipping a fishing pole mutes music, ambience and dialogue without requiring a cast. Removing the pole or disabling the feature restores previous volumes. Manual volume changes are retained; sound effects and master volume stay unchanged, so other effects remain audible alongside the bite.
-- Queue and Next enchant controls beside Blizzard's Enchant button, with a compact row above when space is limited. Select a recipe/target in Enchanting, open Queue, set the count and click Add selected; Next works with that window closed and requires a separate player input for each enchant and replacement confirmation.
+- Optional Quiet fishing audio under Fishing or Sounds, off by default per character. Equipping a fishing pole mutes music, ambience and dialogue without requiring a cast. Removing the pole or disabling the feature restores previous volumes. Manual volume changes are retained; sound effects and master volume stay unchanged, so other effects remain audible alongside the bite.
 
 Combat and interface
 - Right-click ranged attacks, with native Throw/Bow/Gun/Crossbow selection for warriors and rogues even during combat weapon swaps. One macro is retained, class defaults are unchanged, and account/custom macros are preserved.
@@ -31,6 +30,10 @@ Install the MeffortSuite folder in Interface/AddOns and reload. Existing saved p
 
 If an interface action fails, export before reloading or logging out: type /msuite export, click Select report, and press Ctrl+C (Command+C on Mac). Switch out of the game and paste the report into your bug report to Mefforts with Ctrl+V (Command+V on Mac). Include what you clicked or pressed and the NPC or window involved. A single chat notice explains these steps for reported Suite/Wand or generic blocked actions; no Lua error is needed. /msuite diagnostics shows session status in chat.
 
-Code is licensed under MIT. Bundled spell data is attributed under CC BY 4.0, and the upstream EnchantQueue MIT notice is included. This unofficial addon is not affiliated with Blizzard.
+Code is licensed under MIT. Bundled spell data is attributed under CC BY 4.0,. This unofficial addon is not affiliated with Blizzard.
 
 Feature pages include setup guidance and a ? help page. Loot controls are grouped under Bags > Looting & loot value. Floats last six seconds by default, with an adjustable 2–12 second duration.
+
+Sounds includes an optional native pet-category mute and advanced muting of verified sound-file IDs. Both start off. Native pet muting is broader than footsteps; shared sound files affect every source using them. Prior settings restore on disable, with failed recovery retained.
+
+Restore Defaults opens a review before resetting account/current-character preferences and reloading. Bank item lists, custom sound-file lists, macros and game keybindings are retained. Enchant Queue has been removed.

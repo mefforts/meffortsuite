@@ -1,31 +1,31 @@
-PASS: 23 Lua files compile under Lua 5.1
-PASS: bindings XML and TOC load entries
+PASS: 24 Lua files compile under Lua 5.1
+PASS: TOC entries and packaged XML
 
 Running test_action_range_colors.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.017s
+Ran 10 tests in 0.015s
 
 OK
 
 Running test_bank_inclusions.py
 ...............
 ----------------------------------------------------------------------
-Ran 15 tests in 0.020s
+Ran 15 tests in 0.029s
 
 OK
 
 Running test_bank_inventory.py
 ........................
 ----------------------------------------------------------------------
-Ran 24 tests in 0.034s
+Ran 24 tests in 0.033s
 
 OK
 
 Running test_client_call_guard.py
 ............
 ----------------------------------------------------------------------
-Ran 12 tests in 0.018s
+Ran 12 tests in 0.019s
 
 OK
 
@@ -38,35 +38,35 @@ test_overlay_hides_for_hidden_ancestor_and_master (__main__.CombatTests.test_ove
 test_range_legacy_controls_and_escape (__main__.CombatTests.test_range_legacy_controls_and_escape) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.010s
+Ran 6 tests in 0.007s
 
 OK
 
 Running test_core.py
 ................
 ----------------------------------------------------------------------
-Ran 16 tests in 0.042s
+Ran 16 tests in 0.037s
+
+OK
+
+Running test_defaults.py
+...........
+----------------------------------------------------------------------
+Ran 11 tests in 0.225s
 
 OK
 
 Running test_diagnostics.py
 ...........
 ----------------------------------------------------------------------
-Ran 11 tests in 0.059s
-
-OK
-
-Running test_enchant.py
-................................................
-----------------------------------------------------------------------
-Ran 48 tests in 0.107s
+Ran 11 tests in 0.053s
 
 OK
 
 Running test_fast_loot.py
 .................
 ----------------------------------------------------------------------
-Ran 17 tests in 0.026s
+Ran 17 tests in 0.027s
 
 OK
 
@@ -80,77 +80,77 @@ OK
 Running test_fishing_double_click.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.015s
+Ran 10 tests in 0.016s
 
 OK
 
 Running test_fishing_single_click.py
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 0.010s
+Ran 6 tests in 0.009s
 
 OK
 
 Running test_fishing_wand_compat.py
 ...
 ----------------------------------------------------------------------
-Ran 3 tests in 0.033s
+Ran 3 tests in 0.035s
 
 OK
 
 Running test_gossip_services.py
 ........................
 ----------------------------------------------------------------------
-Ran 24 tests in 0.040s
+Ran 24 tests in 0.049s
 
 OK
 
 Running test_interactions.py
 .............
 ----------------------------------------------------------------------
-Ran 13 tests in 0.014s
+Ran 13 tests in 0.015s
 
 OK
 
 Running test_load.py
 ................
 ----------------------------------------------------------------------
-Ran 16 tests in 0.809s
+Ran 16 tests in 0.882s
 
 OK
 
 Running test_loot_value.py
 ..................................................................
 ----------------------------------------------------------------------
-Ran 66 tests in 0.120s
+Ran 66 tests in 0.127s
 
 OK
 
 Running test_options_registration.py
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 0.016s
+Ran 6 tests in 0.019s
 
 OK
 
 Running test_package.py
 ......
 ----------------------------------------------------------------------
-Ran 6 tests in 1.430s
+Ran 6 tests in 1.313s
 
 OK
 
 Running test_quest_geometry_ownership.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.032s
+Ran 10 tests in 0.031s
 
 OK
 
 Running test_quest_gutter_drift.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.072s
+Ran 10 tests in 0.068s
 
 OK
 
@@ -164,7 +164,7 @@ OK
 Running test_quest_inline_contract.py
 ...
 ----------------------------------------------------------------------
-Ran 3 tests in 0.006s
+Ran 3 tests in 0.007s
 
 OK
 
@@ -178,56 +178,63 @@ OK
 Running test_quest_native_layouts.py
 .......
 ----------------------------------------------------------------------
-Ran 7 tests in 0.016s
+Ran 7 tests in 0.017s
 
 OK
 
 Running test_quest_native_safety.py
 .....
 ----------------------------------------------------------------------
-Ran 5 tests in 0.021s
+Ran 5 tests in 0.020s
 
 OK
 
 Running test_quest_priority.py
 ................
 ----------------------------------------------------------------------
-Ran 16 tests in 0.032s
+Ran 16 tests in 0.035s
 
 OK
 
 Running test_quest_render_regression.py
 ............
 ----------------------------------------------------------------------
-Ran 12 tests in 0.044s
+Ran 12 tests in 0.043s
 
 OK
 
 Running test_ranged_variants.py
 ..........
 ----------------------------------------------------------------------
-Ran 10 tests in 0.075s
+Ran 10 tests in 0.081s
 
 OK
 
 Running test_reward_value.py
 ...................
 ----------------------------------------------------------------------
-Ran 19 tests in 0.033s
+Ran 19 tests in 0.042s
 
 OK
 
 Running test_settings.py
-..................
+.....................
 ----------------------------------------------------------------------
-Ran 18 tests in 0.052s
+Ran 21 tests in 0.066s
 
 OK
 
 Running test_shared_macros.py
 ...............................
 ----------------------------------------------------------------------
-Ran 31 tests in 0.027s
+Ran 31 tests in 0.032s
+
+OK
+
+Running test_sound.py
+................
+----------------------------------------------------------------------
+Ran 16 tests in 0.018s
 
 OK
 
@@ -241,8 +248,8 @@ PASS: unsupported mode is normalized
 Running test_way_commands.py
 ..................
 ----------------------------------------------------------------------
-Ran 18 tests in 0.030s
+Ran 18 tests in 0.029s
 
 OK
 
-PASS: 34 regression scripts. Client validation remains separate.
+PASS: 35 regression scripts. Client validation remains separate.

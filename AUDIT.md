@@ -1,13 +1,15 @@
-# MeffortSuite 1.1.12 release audit
+# MeffortSuite 1.1.13 release audit
 
-This release adds native reward vendor labels, clearer settings guidance and slower/adjustable loot floats. Reward values start enabled under Quests and use full-stack vendor copper without selecting or claiming rewards. REWARD-SETTINGS-REVIEW-1.1.12.md records contracts, geometry guards, context handling, verification and client checks.
+This release adds optional native pet-category and verified sound-file controls, adds reviewed Restore Defaults with reload, and removes Enchant Queue. SOUND-DEFAULTS-REVIEW-1.1.13.md records behavior, ownership limits, reset scope, removal and client checks.
 
-Independent reward overlays read native geometry without changing names, layout or input. Compact/unsupported label space falls back to recognized reward tooltips. Item requests are bounded; stale contexts, invalid/secret values, clipping, row reuse, close, combat and world transitions are guarded. Queued-close cancellation prevents old refreshes reviving labels. Existing diagnostic reports include reward status.
+New sound controls start off. Native muting is broader than companion footsteps; shared-file muting affects all sources and needs verified IDs. No companion-specific routing or guessed preset is claimed. Prior values and accepted file mutes have recovery tracking, failed cleanup stays pending, and quiet fishing remains independent. Unsupported/refused APIs are reported and guarded; no idle polling is added.
 
-Setup guidance, section headings, task links, prerequisites and report-copy steps are available in the panel. Back retains page/scroll and text drafts. Loot controls have a Bags subpage and direct command. Merchant retry checks its context. Floats now last six seconds by default, with 2–12 second duration captured per new animation. Existing quality filters, Auctionator totals, pool baselines and gameplay controls are retained.
+Defaults require a review and explicit confirmation. The suite stops work and restores audio before staging; unsafe context or incomplete recovery refuses the reset. Startup applies account/current-character preference defaults before module caches initialize. Lists, macros, game bindings and other characters' personal settings are retained. Failed reload remains retryable with the suite off.
 
-All 34 regression scripts pass: 498 unit-test methods and five tooltip script checks. All 30 shipped text/source/data files pass the package's prompt/model/transcript scan. The new source comment explains overlay ownership. Legal and attribution notices are byte-identical to 1.1.11.
+Enchant Queue implementation, controls, binding file, runtime handlers, diagnostics and active guidance are removed. Old character queue data is pruned. The dedicated upstream notice/attribution section is removed with that code; suite MIT and spell-data CC BY notices remain. The help description and older task-like changelog wording are tidied.
 
-The archive has one MeffortSuite folder and exactly 34 files, including 23 Lua modules and four textures. Tests, reviews, snapshots, build tools and old archives are excluded. TOC, runtime, About fallback, player documentation, notes and filename agree on 1.1.12. Packaging and regression checks validate references, source/archive equality, reproducibility, permissions and integrity.
+All 35 regression scripts pass: 480 unit-test methods and five tooltip script checks. All 29 shipped text/source/data files pass the package's prompt/model/transcript scan. The new comment explains applying defaults before cached module initialization.
 
-Native font rendering, tooltip/scroll behavior, protected actions and server timing still require Forever validation. Preparation does not upload to CurseForge or publish the environment.
+The ZIP has one MeffortSuite folder and exactly 33 files, including 24 Lua modules and four textures. Tests, reviews, build tools, old archives, the removed module/binding and its obsolete notice are excluded. TOC, runtime, About fallback, player documentation, notes and filename agree on 1.1.13. Packaging/tests validate references, source/archive equality, reproducibility, permissions and integrity.
+
+Native audio routing, installed sound-file mappings, protection, reset reload and rendering still require Forever validation. Preparation does not submit to CurseForge or publish the environment.
