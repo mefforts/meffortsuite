@@ -1,12 +1,12 @@
 {
-  "version": "1.1.13",
-  "packaged_files": 33,
-  "lua_modules": 24,
-  "text_files_scanned": 29,
+  "version": "1.1.14",
+  "packaged_files": 34,
+  "lua_modules": 25,
+  "text_files_scanned": 30,
   "prompt_or_model_remnants": [],
-  "legal_notices": "Suite MIT license unchanged; spell-data attribution retained; notice for removed Enchant Queue implementation removed",
-  "unit_test_methods": 480,
-  "regression_scripts": 35,
+  "legal_notices": "Suite MIT license and spell-data attribution unchanged",
+  "unit_test_methods": 497,
+  "regression_scripts": 36,
   "tooltip_script_checks": 5,
   "textures": [
     {
@@ -30,20 +30,18 @@
       "bits": 32
     }
   ],
-  "changed_files_from_1.1.12": [
-    "ATTRIBUTION.txt",
+  "changed_files_from_1.1.13": [
     "CHANGELOG.txt",
     "MeffortSuite.lua",
     "MeffortSuite.toc",
+    "MeffortSuiteBackpack.lua",
+    "MeffortSuiteBank.lua",
     "MeffortSuiteCore.lua",
     "MeffortSuiteDefaults.lua",
+    "MeffortSuiteFastLoot.lua",
+    "MeffortSuiteGossipServices.lua",
     "MeffortSuiteSettingsUI.lua",
-    "MeffortSuiteSound.lua",
     "README.txt"
   ],
-  "removed_files_from_1.1.12": [
-    "Bindings.xml",
-    "MeffortSuiteEnchantQueue.lua",
-    "THIRD-PARTY-EnchantQueue-LICENSE.txt"
-  ]
+  "removed_files_from_1.1.13": []
 }

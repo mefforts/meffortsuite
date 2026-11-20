@@ -1,15 +1,13 @@
-# MeffortSuite 1.1.13 release audit
+# MeffortSuite 1.1.14 release audit
 
-This release adds optional native pet-category and verified sound-file controls, adds reviewed Restore Defaults with reload, and removes Enchant Queue. SOUND-DEFAULTS-REVIEW-1.1.13.md records behavior, ownership limits, reset scope, removal and client checks.
+This release removes the dedicated Orgrimmar banker shortcut, defaults Fast auto loot ON without overriding saved OFF choices, and adds the native backpack free-slot counter under Bags. BANK-BACKPACK-REVIEW-1.1.14.md records behavior, ownership, regression coverage and live-client checks.
 
-New sound controls start off. Native muting is broader than companion footsteps; shared-file muting affects all sources and needs verified IDs. No companion-specific routing or guessed preset is claimed. Prior values and accepted file mutes have recovery tracking, failed cleanup stays pending, and quiet fishing remains independent. Unsupported/refused APIs are reported and guarded; no idle polling is added.
+Banks use the general single-option service shortcut and dialogue keys. NPC-specific selection and delayed callbacks are removed; the retired preference is pruned. The independent flight-master setting remains. Fast auto loot continues to respect the native decision/modifier and existing failure/confirmation/combat guards.
 
-Defaults require a review and explicit confirmation. The suite stops work and restores audio before staging; unsafe context or incomplete recovery refuses the reset. Startup applies account/current-character preference defaults before module caches initialize. Lists, macros, game bindings and other characters' personal settings are retained. Failed reload remains retryable with the suite off.
+The backpack feature enables the native display setting and delegates counting/rendering/updates to the game. It adds no bag scan, overlay or idle timer. Prior settings restore on disable, master off and world transitions; manual changes are honored, combat writes defer and failed restoration stays recorded. Reset checks this recovery before staging. Native specialty-bag counting and custom bar behavior require client validation.
 
-Enchant Queue implementation, controls, binding file, runtime handlers, diagnostics and active guidance are removed. Old character queue data is pruned. The dedicated upstream notice/attribution section is removed with that code; suite MIT and spell-data CC BY notices remain. The help description and older task-like changelog wording are tidied.
+All 36 regression scripts pass: 497 unit-test methods and five tooltip script checks. All 30 shipped text/source/data files pass the package's prompt/model/transcript scan. Added source comments were reviewed for necessity; no conversational or model text is shipped.
 
-All 35 regression scripts pass: 480 unit-test methods and five tooltip script checks. All 29 shipped text/source/data files pass the package's prompt/model/transcript scan. The new comment explains applying defaults before cached module initialization.
+The ZIP has one MeffortSuite folder and exactly 34 files, including 25 Lua modules and four textures. Tests, reviews, build tools, archives and removed Enchant Queue files are excluded. TOC, runtime, About fallback, player documentation, notes and filename agree on 1.1.14. Packaging/tests validate references, source/archive equality, reproducibility, permissions and integrity. Suite MIT and spell-data attribution remain unchanged.
 
-The ZIP has one MeffortSuite folder and exactly 33 files, including 24 Lua modules and four textures. Tests, reviews, build tools, old archives, the removed module/binding and its obsolete notice are excluded. TOC, runtime, About fallback, player documentation, notes and filename agree on 1.1.13. Packaging/tests validate references, source/archive equality, reproducibility, permissions and integrity.
-
-Native audio routing, installed sound-file mappings, protection, reset reload and rendering still require Forever validation. Preparation does not submit to CurseForge or publish the environment.
+Native game behavior, protection and rendering still require Forever validation. Preparation does not submit to CurseForge or publish the environment.

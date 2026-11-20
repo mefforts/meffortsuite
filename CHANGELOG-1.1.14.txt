@@ -1,0 +1,19 @@
+MeffortSuite 1.1.14
+
+Bank Dialogue
+- Remove the dedicated Skip Orgrimmar banker dialogue feature, NPC-specific selection logic, delayed callbacks and settings.
+- Use Quest dialogue keys or the general single-option service shortcut for banks.
+- Banks no longer bypass a disabled general shortcut, multiple choices or offered quests.
+- Ignore and remove the retired banker preference. Keep the independent flight-master setting.
+
+Fast Auto Loot
+- Enable Fast auto loot by default for new/unset preferences and after Restore Defaults.
+- Retain explicit saved OFF choices.
+- Continue respecting native Auto Loot and its modifier, manual-loot decisions, combat and confirmation guards.
+
+Backpack Free Slots
+- Add Backpack free-slot count under Bags; on by default and saved account-wide.
+- Enable the client's own empty-slot number over the native backpack icon, using native counting and update rules.
+- Restore the prior game display setting on disable/master off/world transitions. A count already enabled in game can remain visible.
+- Defer setting changes during combat, respect manual game changes for the session and retain failed restoration records.
+- Include counter state in diagnostic exports and restore its owned setting before a defaults reset.

@@ -5,9 +5,10 @@ Inventory, profession, quest, combat and travel tools for WoW Forever (Interface
 Open /msuite or Options > AddOns > MeffortSuite. Each feature can be configured independently, and the master switch retains your saved preferences.
 
 Bags and banking
-- Optional fast auto loot follows native auto-loot/modifier choices, with native confirmations and combat handling.
+- Fast auto loot is on by default for unset preferences (saved OFF choices remain off) and follows native auto-loot/modifier choices, with native confirmations and combat handling.
 - Quest reward vendor labels show full-stack prices without choosing a reward; compact layouts retain tooltip values.
 - Floating loot totals with native coin icons, a gentle rise and fade, and confirmed loot money plus item vendor value. All item qualities are included by default; grey-only mode is available. Optional Auctionator AH estimates and a combined vendor + (AH) display fall back to vendor prices and start off.
+- A native backpack empty-slot counter, enabled by default with restoration of the prior game setting.
 - Bag sorting, grey-item sales, repairs using personal gold, reagent deposits and personal-bank sorting.
 - Per-character banking inclusion and exclusion lists using exact item names or numeric IDs.
 
@@ -23,7 +24,7 @@ Combat and interface
 
 Quests and travel
 - Spacebar quest priority, numbered dialogue choices and native menu labels where the layout permits them.
-- Single-option shop/service shortcuts and bank/flight-master dialogue shortcuts with Shift bypasses.
+- Single-option shop/service shortcuts and flight-master dialogue shortcuts with Shift bypasses.
 - /way coordinate commands and a waypoint arrow using the client's zone data.
 
 Install the MeffortSuite folder in Interface/AddOns and reload. Existing saved preferences are retained. Floating loot uses an available nameplate screen position or the loot-click position; AoE loot is combined. Loot receipt formats use native localized messages where available. Spell explanations and tooltip-header parsing use English data. Optional standalone MeffortWand takes priority over the suite's wand controls.
@@ -37,3 +38,5 @@ Feature pages include setup guidance and a ? help page. Loot controls are groupe
 Sounds includes an optional native pet-category mute and advanced muting of verified sound-file IDs. Both start off. Native pet muting is broader than footsteps; shared sound files affect every source using them. Prior settings restore on disable, with failed recovery retained.
 
 Restore Defaults opens a review before resetting account/current-character preferences and reloading. Bank item lists, custom sound-file lists, macros and game keybindings are retained. Enchant Queue has been removed.
+
+Banks use the general single-option service shortcut and dialogue keys; the dedicated Orgrimmar banker shortcut is removed.

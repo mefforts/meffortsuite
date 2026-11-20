@@ -1,0 +1,13 @@
+# MeffortSuite 1.1.14 bank, loot and backpack review
+
+The dedicated Orgrimmar banker option, NPC identifiers, event handling and delayed selection callbacks are removed. The retired saved preference is pruned. Its old slash command only explains where the replacement controls are. Banks now use the general single-option service setting or dialogue keys; general OFF, multiple choices, offered quests, paid/confirmation options, combat and Shift guards remain applicable. Flight masters retain their independent setting.
+
+Fast auto loot is ON for absent preferences and after Restore Defaults. Explicit saved OFF remains OFF. The native auto-loot decision and modifier still determine whether a pass runs; manual looting stays manual. Existing one-frame requests, confirmation, full-bag, combat and blocked-action guards are unchanged.
+
+Backpack free-slot count is ON by default under Bags. It enables the native displayFreeBagSlots setting. The native MainMenuBarBackpackMixin owns its centered FreeSlots text and refreshes it through native bag events using C_Container.CalculateTotalNumberOfFreeBagSlots. The suite adds neither an overlay nor bag scans or idle polling. Specialty-bag counting follows the client's native calculation; this review does not claim an independently verified family filter. Custom bag bars can control their own display.
+
+The module records a changed native setting before enabling it, restores it on disable/master off/world leave/logout, and preserves an already-enabled native preference. Manual in-game OFF is respected for the session. Combat defers writes. Unavailable/refused APIs receive a status without repeated enable requests; failed restoration retains its ledger. Diagnostics include the module state. Restore Defaults must complete owned backpack-setting recovery before staging the reset.
+
+All 36 regression scripts pass: 497 unit-test methods plus five tooltip script checks. New cases cover retired banker gates, saved/default fast-loot choices, native-only backpack rendering, no addon bag scans, prior settings, manual changes, login/world transitions, combat deferral, missing/refused APIs, blocked-call recording and reset recovery. Packaging checks source/archive equality, integrity, repeatability and explicit manifest membership.
+
+Forever checks remain: native counter placement/counts for ordinary and specialty bags, empty/full inventory, bag swaps, custom bag bars, entering/leaving the world and combat; bank single-option/Shift/quest guards; native manual and modified auto-loot. Mock tests do not establish live rendering or absence of client taint.

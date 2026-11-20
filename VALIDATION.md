@@ -1,4 +1,4 @@
-# MeffortSuite 1.1.13 validation
+# MeffortSuite 1.1.14 validation
 
 Automated checks and client validation are separate. Run `python tests/run_tests.py` from the repository to see the current automated results. An automated pass is not evidence of taint-free or server-confirmed behavior.
 
@@ -185,3 +185,10 @@ Repeat relevant checks with supported standalone addons and common UI/bag replac
 - Defaults tests cover reviewed/staged execution, occupied/unknown cursor, combat/held input, audio restoration gates, retained recovery on failures, failed-reload retry, preserved data/other-addon settings and no macro/keybinding mutations. A fresh whole-TOC runtime verifies actual startup reset and class defaults without legacy re-import.
 - UI tests cover review-before-reset, cancellation, separate native/file sound controls, advanced-list navigation and absence of Enchant Queue controls/help. All live pages build with optional APIs absent.
 - In Forever, try native pet sounds with the intended companion. Some footstep files can be shared or outside that category; test verified file IDs separately and check other creature sources. Toggle/master off, change zones, reload and test manual volume changes. For defaults, review scope, confirm with a safe cursor out of combat, check audio restoration and preserved lists, then verify class defaults after reload. Inspect native Enchanting without addon buttons. Actual sound routing and client protection remain live checks.
+
+## Added 1.1.14 checks
+
+- Bank dialogue is governed only by general single-option service/quest-key behavior. Real-module tests cover all retired NPC IDs, general OFF, multiple choices, delayed/indexed options, Shift latching, quest gates and old flag removal. Flight-specific OFF/dispatch behavior remains tested separately.
+- Fast-loot tests verify the new default ON and saved OFF preservation while keeping native event/modifier/manual-loot rules and existing guards. Startup defaults tests confirm both fast loot and backpack count return to ON.
+- Backpack tests use a simulated native counter and prohibit addon widget writes and bag scans. They cover native bag-event updates, original ON/OFF choices, manual changes, master/world/login cleanup, combat deferral, failed recovery, missing/refused APIs and real blocked-call recording/suppression. Defaults refuses pending backpack restoration alongside audio recovery.
+- UI/Core checks cover the new counter switch, removed banker row/preference and saved OFF values. In Forever, verify the native number on the backpack icon with empty/full bags and bag swaps, its counting behavior for specialty bags, master/feature/manual switches and combat/reload restoration. Test banker menus with the general shortcut on/off, quests, multiple choices and Shift. Client counting/rendering/protection remain native/live checks.

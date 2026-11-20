@@ -1,9 +1,9 @@
-# MeffortSuite 1.1.13
+# MeffortSuite 1.1.14
 
 ## Upload details
 
-- File: `MeffortSuite-1.1.13.zip`
-- Display name: `MeffortSuite 1.1.13`
+- File: `MeffortSuite-1.1.14.zip`
+- Display name: `MeffortSuite 1.1.14`
 - Addon folder: `MeffortSuite`
 - Client target: WoW Forever, Interface `16001`
 - Dependencies: none required; optional MeffortWand compatibility and Auctionator pricing
@@ -11,7 +11,7 @@
 
 Select only a CurseForge game-version entry that matches the intended client. Availability of a matching Forever entry has not been verified; do not substitute unrelated client metadata. No project ID or upload token is needed to upload manually.
 
-Use `CURSEFORGE-DESCRIPTION.txt` for the project page and `CHANGELOG-1.1.13.txt` for upload notes.
+Use `CURSEFORGE-DESCRIPTION.txt` for the project page and `CHANGELOG-1.1.14.txt` for upload notes.
 
 ## Project description
 
@@ -19,7 +19,7 @@ MeffortSuite brings inventory, profession, quest, combat, and travel tools toget
 
 Configure tools individually with `/msuite` or Options > AddOns > MeffortSuite. The optional login announcement appears only in chat. Preferences are retained across reloads, with account and character scope clearly marked.
 
-- Bags and banking: floating loot value for received coins and vendor prices across all item qualities, with optional grey-only mode, Auctionator AH estimates and combined vendor/AH display, optional fast auto loot, bag sorting, junk sales, personal-gold repairs, reagent deposits, bank sorting, and per-character item inclusion/exclusion lists.
+- Bags and banking: floating loot value for received coins and vendor prices across all item qualities, with optional grey-only mode, Auctionator AH estimates and combined vendor/AH display, fast auto loot, native backpack free-slot count, bag sorting, junk sales, personal-gold repairs, reagent deposits, bank sorting, and per-character item inclusion/exclusion lists.
 - Fishing and sounds: pole-equipped right-click fishing, optional quiet fishing audio, native pet-category muting and advanced verified sound-file controls.
 - Combat: right-click ranged attacks, a conservative range warning, and Mage Arcane Blast tracking on Blizzard Tracked Buffs.
 - Quests and travel: full-stack reward vendor labels, quest-prioritized dialogue hotkeys, native menu key labels, waypoint arrows, and single-option service shortcuts with Shift bypasses.
@@ -31,7 +31,7 @@ Quiet fishing audio is off by default under Fishing or Sounds. It mutes music, a
 
 ## Release audit
 
-SOUND-DEFAULTS-REVIEW-1.1.13.md records sound ownership/recovery, reviewed defaults with reload, and complete removal of the Enchant Queue implementation. Earlier reviews remain historical records; they do not describe the current feature set. Native sound behavior, protection and rendering still require Forever validation.
+BANK-BACKPACK-REVIEW-1.1.14.md records removal of the dedicated banker shortcut, default-on fast looting and native backpack count ownership/restoration. Earlier reviews are historical records. Native game behavior, protection and rendering still require Forever validation.
 
 ## Support reports
 
@@ -39,13 +39,13 @@ Blocked-action notices explain the export workflow once per UI session. Players 
 
 ## File changelog
 
-Use the `MeffortSuite 1.1.13` section from `MeffortSuite/CHANGELOG.txt` for the file's changelog.
+Use the `MeffortSuite 1.1.14` section from `MeffortSuite/CHANGELOG.txt` for the file's changelog.
 
 ## Final checks
 
 - Automated tests and archive checks: record results in `VALIDATION-RESULTS.txt`.
 - ZIP root: exactly one `MeffortSuite/` folder; required licenses and all referenced textures included.
-- Version: TOC, runtime, About, README, filename, and upload display name agree on `1.1.13`.
+- Version: TOC, runtime, About, README, filename, and upload display name agree on `1.1.14`.
 - Source/text audit: no conversational transcripts, prompt remnants, draft labels, or scratch files in the archive.
 - In-game validation: use `VALIDATION.md`; actual protected actions, server timing, and rendering remain unverified until tested in the target client.
 - CurseForge acceptance/game-version selection: confirm on the upload page. Preparing this archive does not submit or publish it.
