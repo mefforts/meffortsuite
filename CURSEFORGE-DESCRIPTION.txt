@@ -4,10 +4,12 @@ Type /msuite or open Options > AddOns > MeffortSuite to get started.
 
 Quests and travel
 - Use Space to advance quest dialogue and keys 1–9 to pick visible menu choices
-  in order. Show the full vendor value of item rewards.
+  in order. Use Space to confirm eligible game prompts. Show the full vendor
+  value of item rewards.
 - Open recognized single-option services or flight maps. Hold Shift for normal
   dialogue. Choose your own flight destination.
-- Set native map pins with /way and follow them with the optional waypoint arrow.
+- Set native map pins with /way. Turn on the optional waypoint arrow in Map
+  to follow them.
 
 Bags, bank and loot
 - Sort bags and your personal bank, sell junk, repair with personal gold, and
