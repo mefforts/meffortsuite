@@ -1,0 +1,50 @@
+MeffortSuite for World of Warcraft: Forever
+
+MeffortSuite adds shortcuts and settings for quests, bags, loot, combat,
+fishing, and travel. Type /msuite or open Options > AddOns > MeffortSuite
+to get started.
+
+Combat
+- Configure right-click or Shift + right-click for wanding, shooting, and
+  throwing on supported classes. The Combat tile follows your equipped weapon.
+- Show a dot when your target is out of range. Mages can add an Arcane Blast
+  stack counter and timer to Blizzard's Tracked Buffs.
+
+Fishing
+- Double right-click to cast with a fishing pole. Enable WoW's Interact Key
+  and aim at the bobber to see its native cog. Double right-click again
+  when it splashes.
+- Optional first-person zoom tilts slightly downward during a cast. Set
+  Zoom-out delay in Fishing from 0 to 10 seconds. It starts at 2.75 seconds.
+- Quiet fishing audio mutes music, ambience, and dialogue while leaving
+  sound effects audible.
+
+Loot, bags, and banking
+- Speed up native auto loot and show floating totals with vendor prices,
+  optional Auctionator estimates, or both.
+- Sort bags and your personal bank, sell junk, repair with personal gold,
+  and display free bag slots on the backpack icon.
+- Deposit crafting reagents automatically. Include or exclude items by name
+  or item ID.
+
+Quests and travel
+- Press Space to advance quest dialogue and keys 1–9 to choose menu entries.
+  Space also accepts eligible Yes/No and confirmation prompts.
+- Open the flight map at recognized flight masters. Hold Shift to see the
+  regular dialogue.
+- Place map pins with /way X Y. Enable the optional waypoint arrow in Map
+  to follow a pin.
+
+Tooltips, bars, and sounds
+- Highlight spell headers and costs, customize tooltip badges, and show a
+  reminder when you've learned a higher spell rank.
+- Adjust action-bar keybind labels, size, offsets, color, outline, and shadow.
+- Mute native pet sounds or mute selected sounds by verified sound-file ID.
+
+Compatibility
+Built for WoW Forever 1.60.1 (Interface 16001). Auctionator is optional.
+An active standalone MeffortWand takes priority for wand controls.
+Spell tooltip enhancements use English client text.
+
+For a bug report, run /msuite export and copy the diagnostic report before
+reloading the UI.
