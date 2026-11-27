@@ -4,7 +4,7 @@ MeffortSuite brings loot, action bar, combat, quest, fishing, and inventory tool
 
 ## Loot tracker
 
-The tracker starts on login by default and displays a compact coin total below the minimap coordinates. Click the total to open a resizable log with item icons, quantities, vendor values, and cached Auctionator AH estimates. Choose Parchment, Transparent, or Blizzard styling.
+The tracker starts on login by default and displays a compact coin total below the minimap coordinates. Click the total to open a resizable log with item icons, quantities, vendor values, and cached Auctionator AH estimates. Blizzard is the default style, with Parchment and Transparent available in Loot settings.
 
 Set a session timer in minutes or hours from the tracker. The expiry alert reports the duration, item count, and values. The tracker holds the completed total until your next loot pickup starts a fresh session or you press **Reset**. Turn off **Track loot on login** in **Loot** to start sessions manually.
 

@@ -7,7 +7,8 @@ World of Warcraft: Forever 1.60.1 | Interface 16001
   sessions manually.
 - Review item icons, quantities, vendor values, and cached Auctionator AH
   estimates in the Items view. The Values view combines loot and coins
-  into session totals. Choose Parchment, Transparent, or Blizzard styling.
+  into session totals. Blizzard is the default style, with Parchment and
+  Transparent available in Loot settings.
 - Use Reset to clear the session, or set a timer in minutes or hours beside
   Reset. The expiry alert shows the duration, item count, and values. The
   tracker keeps the final total visible until your next pickup starts a
