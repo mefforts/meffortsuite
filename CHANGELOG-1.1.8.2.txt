@@ -5,10 +5,9 @@ World of Warcraft: Forever 1.60.1 | Interface 16001
   opens and starts tracking on login by default. Click the strip to expand
   or collapse the tracker. Turn off Track loot on login in Loot to start
   sessions manually.
-- Review item icons, quantities, vendor values, and cached Auctionator AH
-  estimates in the Items view. The Values view combines loot and coins
-  into session totals. Blizzard is the default style, with Parchment and
-  Transparent available in Loot settings.
+- Review coins and session totals above a sortable item log. Sort by name,
+  rarity, quantity, vendor value, or cached Auctionator AH estimate.
+  Blizzard is the default style, with Parchment and Transparent in Loot.
 - Use Reset to clear the session, or set a timer in minutes or hours beside
   Reset. The expiry alert shows the duration, item count, and values. The
   tracker keeps the final total visible until your next pickup starts a
