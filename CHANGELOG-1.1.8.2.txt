@@ -1,0 +1,16 @@
+MeffortSuite 1.1.8.2
+World of Warcraft: Forever 1.60.1 | Interface 16001
+
+- Track loot in a compact coin strip below the minimap coordinates. It
+  opens and starts tracking on login by default. Click the strip to expand
+  or collapse the tracker. Turn off Track loot on login in Loot to start
+  sessions manually.
+- Review item icons, quantities, vendor values, and cached Auctionator AH
+  estimates in the Items view. The Values view combines loot and coins
+  into session totals. Choose Parchment, Transparent, or Blizzard styling.
+- Use Reset to clear the session, or set a timer in minutes or hours beside
+  Reset. The expiry alert shows the duration, item count, and values. The
+  tracker keeps the final total visible until your next pickup starts a
+  fresh session or you reset it.
+- Fixed a Mage scroll shortcut error when Blizzard's ping interface has
+  mouse focus.

@@ -1,0 +1,25 @@
+# MeffortSuite
+
+MeffortSuite brings loot, action bar, combat, quest, fishing, and inventory tools together for **World of Warcraft: Forever**. Open settings with `/msuite`, `/meffsuite`, or `/meffortsuite`, or choose **MeffortSuite** from its minimap menu.
+
+## Loot tracker
+
+The tracker starts on login by default and displays a compact coin total below the minimap coordinates. Click the total to open a resizable log with item icons, quantities, vendor values, and cached Auctionator AH estimates. Choose Parchment, Transparent, or Blizzard styling.
+
+Set a session timer in minutes or hours from the tracker. The expiry alert reports the duration, item count, and values. The tracker holds the completed total until your next loot pickup starts a fresh session or you press **Reset**. Turn off **Track loot on login** in **Loot** to start sessions manually.
+
+## More tools
+
+- **Loot and bags** offer faster auto loot, floating vendor or AH totals, bag sorting, junk sales, repairs, and a free-slot count. Personal bank tools sort items and deposit crafting materials with custom include and exclude lists.
+- **Combat** offers right-click or Shift + right-click for wanding, Auto Shot, and supported ranged attacks. Configure the out-of-range dot or track Arcane Blast stacks and time on Blizzard’s Tracked Buffs.
+- **Fishing** uses double right-click to cast and reel in with WoW’s Interact Key enabled. Optional first-person zoom and quieter fishing audio help you watch the bobber.
+- **Quests and travel** add Space for quest dialogue and eligible confirmations, 1–9 for dialogue choices, a flight-master shortcut, and `/way X Y` map pins with an optional waypoint arrow.
+- **Bars and tooltips** add customizable keybind labels, whole-percent mana costs, spell badges, and higher-rank reminders.
+- **Minimap and sound** group supported addon buttons in the MeffortSuite menu and offer controls for pet sounds and selected sound files.
+- **Mage scrolls** let Mages who know Comprehend Scroll right-click untranslated scrolls in their standard bags. Enable the shortcut in **Loot**.
+
+## Compatibility
+
+Built for **WoW Forever 1.60.1** (interface 16001). Auctionator is optional. An active standalone MeffortWand takes priority for wand controls. Spell tooltip enhancements use English client text.
+
+To report an issue, use `/msuite export` to copy the diagnostic report before reloading.
